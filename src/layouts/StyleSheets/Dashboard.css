@@ -1,0 +1,26 @@
+.wrapper {
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+}
+#content {
+    width: 100%;
+   
+    min-height: 100vh;
+    transition: all 0.3s;
+    display: flex;
+    flex-direction: column;
+}
+
+
+@media (max-width: 768px) {
+    #sidebar {
+        margin-left: -250px;
+    }
+    #sidebar.active {
+        margin-left: 0;
+    }
+    #sidebarCollapse span {
+        display: none;
+    }
+} 

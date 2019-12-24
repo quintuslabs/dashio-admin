@@ -1,26 +1,28 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+import { createBrowserHistory } from "history";
+import { Router, Route, Switch, Redirect } from "react-router-dom";
+import Dashboard from "./layouts/Dashboard";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {};
+  }
+
+  render() {
+    return (
+      <div>
+        <Router history={browserHistory}>
+          <Switch>
+            <Route exact path="/Dashboard" component={Dashboard} />
+            <Route exact path="/" component={Dashboard} />
+          </Switch>
+        </Router>
+      </div>
+    );
+  }
 }
 
 export default App;
+
+const browserHistory = createBrowserHistory();
