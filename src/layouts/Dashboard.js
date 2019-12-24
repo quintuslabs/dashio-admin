@@ -13,7 +13,7 @@ class Dashboard extends Component {
       <div class="wrapper">
         <Sidebar />
         <div id="content">
-          <Navbar />
+          <Navbar onRef={ref => (this.child = ref)} />
         </div>
       </div>
     );

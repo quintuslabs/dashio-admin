@@ -2,9 +2,11 @@ import React from "react";
 import PropTypes from "prop-types";
 import "./StyleSheets/Sidebar.css";
 export default function Sidebar(props) {
+  const active = props.active;
+
   return (
-    <div>
-      <nav id="sidebar">
+    <div className="sidebar-container">
+      <nav id="sidebar" className={active}>
         <div className="sidebar-header">
           <h3>Bootstrap Sidebar</h3>
         </div>
