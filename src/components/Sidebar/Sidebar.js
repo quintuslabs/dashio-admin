@@ -2,14 +2,15 @@ import React from "react";
 import PropTypes from "prop-types";
 import "./StyleSheets/Sidebar.css";
 export default function Sidebar(props) {
-  const active = props.active;
-
   return (
-    <div className="sidebar-container">
-      <nav id="sidebar" className={active}>
-        <div className="sidebar-header">
+    <div
+      className="sidebar-container border-right main-sidebar"
+      id="sticky-sidebar"
+    >
+      <nav id="sidebar" className={props.toggleClass}>
+        {/* <div className="sidebar-header">
           <h3>Bootstrap Sidebar</h3>
-        </div>
+        </div> */}
 
         <ul className="list-unstyled components">
           <p>Dummy Heading</p>

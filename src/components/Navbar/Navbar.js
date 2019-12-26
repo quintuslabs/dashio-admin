@@ -1,6 +1,7 @@
 import React, { Component } from "react";
-import PropTypes from "prop-types";
 import "./StyleSheets/Navbar.css";
+import PropTypes from "prop-types";
+import ToggleButton from "../../assets/images/align-center.png";
 
 class Navbar extends Component {
   constructor(props) {
@@ -8,28 +9,16 @@ class Navbar extends Component {
     this.state = {};
   }
 
-  componentDidMount() {
-    this.props.onRef(this);
-  }
-  componentWillUnmount() {
-    this.props.onRef(null);
-  }
-  onToggleClicked() {
-    console.log("do stuff");
-  }
   render() {
     return (
-      <div className="header-section">
-        <nav className="navbar navbar-expand-lg navbar-light bg-light">
+      <div className="header-section" id="sticky">
+        <nav className="navbar navbar-expand-lg navbar-light">
           <div className="container-fluid">
-            <button
-              type="button"
-              id="sidebarCollapse"
-              class="btn btn-info"
-              onClick={() => this.onToggleClicked()}
-            >
-              <i class="fa fa-align-left"></i>
-            </button>
+            <img
+              src={ToggleButton}
+              style={{ width: 30 }}
+              onClick={() => this.props.onToggleClick()}
+            ></img>
             <button
               className="btn btn-dark d-inline-block d-lg-none ml-auto"
               type="button"
@@ -39,7 +28,7 @@ class Navbar extends Component {
               aria-expanded="false"
               aria-label="Toggle navigation"
             >
-              <i className="fas fa-align-justify"></i>
+              <i className="fa fa-align-justify"></i>
             </button>
 
             <div

@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { createBrowserHistory } from "history";
 import { Router, Route, Switch, Redirect } from "react-router-dom";
-import Dashboard from "./layouts/Dashboard";
+import BaseLayout from "./layouts/BaseLayout";
 
 class App extends Component {
   constructor(props) {
@@ -14,8 +14,8 @@ class App extends Component {
       <div>
         <Router history={browserHistory}>
           <Switch>
-            <Route exact path="/Dashboard" component={Dashboard} />
-            <Route exact path="/" component={Dashboard} />
+            <Route exact path="/Dashboard" component={BaseLayout} />
+            <Route exact path="/" component={BaseLayout} />
           </Switch>
         </Router>
       </div>
