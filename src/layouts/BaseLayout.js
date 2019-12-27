@@ -22,8 +22,13 @@ class BaseLayout extends Component {
       <div>
         <Navbar onToggleClick={() => this.onToggle()} />
         <div className="wrapper">
-          <Sidebar toggleClass={this.state.toggleClass} />
-          <div id="content">{this.props.children}</div>
+          <div className="sidebar-container">
+            <Sidebar toggleClass={this.state.toggleClass} />
+          </div>
+
+          <div id="content" className={this.state.toggleClass}>
+            {this.props.children}
+          </div>
         </div>
       </div>
     );

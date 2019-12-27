@@ -1,15 +1,28 @@
 .wrapper {
     display: flex;
-    width: 100%;
+    flex-direction: row;
     align-items: stretch;
 }
+
 #content {
-    width: 100%;
-   
+    display: flex;
     min-height: 100vh;
     transition: all 0.3s;
-    display: flex;
     flex-direction: column;
+    width: 100%;
+    margin-left: 250px;
 }
 
+div#content.active {
+    margin-left: 0;
+}
 
+/* ---------------------------------------------------
+    MEDIAQUERIES
+----------------------------------------------------- */
+@media (max-width: 768px) {
+    #content {
+        margin-left: 0px;
+    }
+   
+}

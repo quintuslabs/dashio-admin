@@ -1,7 +1,5 @@
 import React, { Component } from "react";
 import "./StyleSheets/Navbar.css";
-import PropTypes from "prop-types";
-import ToggleButton from "../../assets/images/align-center.png";
 
 class Navbar extends Component {
   constructor(props) {
@@ -14,11 +12,10 @@ class Navbar extends Component {
       <div className="header-section" id="sticky">
         <nav className="navbar navbar-expand-lg navbar-light">
           <div className="container-fluid">
-            <img
-              src={ToggleButton}
-              style={{ width: 30 }}
-              onClick={() => this.props.onToggleClick()}
-            ></img>
+            <div className="nav-title">Dashio-Admin</div>
+            <div onClick={() => this.props.onToggleClick()}>
+              <i className="fa fa-bars" aria-hidden="true"></i>
+            </div>
             <button
               className="btn btn-dark d-inline-block d-lg-none ml-auto"
               type="button"
@@ -37,22 +34,22 @@ class Navbar extends Component {
             >
               <ul className="nav navbar-nav ml-auto">
                 <li className="nav-item active">
-                  <a className="nav-link" href="#">
+                  <a className="nav-link" href="/about">
                     Page
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="#">
+                  <a className="nav-link" href="/index">
                     Page
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="#">
+                  <a className="nav-link" href="/page">
                     Page
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="#">
+                  <a className="nav-link" href="/component">
                     Page
                   </a>
                 </li>

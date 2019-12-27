@@ -3,9 +3,10 @@
     max-width: 250px;
     color: #fff;
     transition: all 0.3s;
-    height: 100vh;
+    height: 90vh;
     overflow-y: auto;
     overflow-x: hidden;
+    display: flex;
 }
 
 div#sticky-sidebar {
@@ -49,8 +50,8 @@ div#sticky-sidebar {
 }
 
 #sidebar ul.components {
-    padding: 20px 0;
-    border-bottom: 1px solid #47748b;
+    padding: 0px 0;
+    width: 100%;
 }
 
 #sidebar ul p {
@@ -106,6 +107,10 @@ a.article:hover {
     color: #fff !important;
 }
 
+.menu-icon{
+    display: inline;
+    margin-right: 10px;
+}
 
 
 a[data-toggle="collapse"] {
@@ -121,8 +126,15 @@ a, a:hover, a:focus {
     font-size: 1.1em;
     display: block;
     text-decoration: none;
-    color: #7386D5;
+    font-weight: 400;
+    color: #3d5170;
     background: #fff;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transition: box-shadow .2s ease,color .2s ease,background-color .2s ease;
+    font-size: .85rem;
+    will-change: background-color,box-shadow,color;
+    padding: .9375rem 1.5625rem;
 }
 /* ---------------------------------------------------
     MEDIAQUERIES

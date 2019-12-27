@@ -17,3 +17,11 @@ div#sticky {
     z-index: 99999;
 
 }
+.nav-title{
+    display: flex;
+    text-overflow: ellipsis;
+    flex-direction: row;
+    width: 220px;
+    font-weight: 600;
+   
+}
