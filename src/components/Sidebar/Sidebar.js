@@ -6,8 +6,7 @@ function Sidebar(props) {
   const [active, setActive] = useState("");
   useEffect(() => {
     setActive(props.location.pathname);
-    console.log(active);
-  });
+  }, [props.location.pathname, active]);
 
   return (
     <div

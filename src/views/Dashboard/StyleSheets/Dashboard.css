@@ -1,0 +1,102 @@
+.chartjs-size-monitor{
+    position: absolute; 
+    left: 0px; 
+    top: 0px; 
+    right: 0px;
+    bottom: 0px;
+    overflow: hidden; 
+    pointer-events: none; 
+    visibility: hidden; 
+    z-index: -1;
+
+}
+.chartjs-size-monitor-expand{
+    position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;
+
+}
+
+.stats-small {
+    min-height: 8.7rem;
+    overflow: hidden!important;
+}
+.card-small {
+    box-shadow: 0 2px 0 rgba(90,97,105,.11), 0 4px 8px rgba(90,97,105,.12), 0 10px 10px rgba(90,97,105,.06), 0 7px 70px rgba(90,97,105,.1);
+}
+.card {
+    background-color: #fff;
+    border: none;
+    border-radius: .625rem;
+    box-shadow: 0 0.46875rem 2.1875rem rgba(90,97,105,.1), 0 0.9375rem 1.40625rem rgba(90,97,105,.1), 0 0.25rem 0.53125rem rgba(90,97,105,.12), 0 0.125rem 0.1875rem rgba(90,97,105,.1);
+}
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: initial;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+}
+
+.card-small .card-body, .card-small .card-footer, .card-small .card-header {
+    padding: 1rem;
+}
+.card-body {
+    padding: 1.875rem;
+}
+
+.card-body {
+    flex: 1 1 auto;
+    padding: 1.25rem;
+}
+
+.stats-small--1 .stats-small__data {
+    max-width: 100%;
+}
+.stats-small__data {
+    flex: 1 1;
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    max-width: 50%;
+    z-index: 1;
+}
+.text-center {
+    text-align: center!important;
+}
+
+.stats-small--1 .stats-small__label, .stats-small--1 .stats-small__percentage {
+    font-size: .75rem;
+}
+.stats-small__label {
+    font-size: .625rem;
+    letter-spacing: .0625rem;
+    color: #818ea3;
+}
+.text-uppercase {
+    text-transform: uppercase!important;
+}
+.no-gutters {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.page-header .page-subtitle {
+    letter-spacing: .125rem;
+    color: #818ea3;
+    font-size: .625rem;
+}
+
+.page-header .page-title {
+    font-size: 1.625rem;
+    font-weight: 500;
+    line-height: 1;
+    margin: 0;
+    padding: 0;
+}
+@media (min-width: 768px){
+.text-md-left {
+    text-align: left!important;
+}}
