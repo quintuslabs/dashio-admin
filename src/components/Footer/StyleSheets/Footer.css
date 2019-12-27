@@ -1,0 +1,15 @@
+footer.site-footer .footer-inner {
+    color: #78909c;
+   
+    font-size: 14px;
+    line-height: 1.5;
+    padding: 2.45em 1.125em;
+}
+.bg-white {
+    background-color: #fff;
+}
+
+footer.site-footer {
+    margin-left: -15px;
+    margin-right: -15px;
+}

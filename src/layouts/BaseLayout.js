@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import "./StyleSheets/BaseLayout.css";
 import Sidebar from "../components/Sidebar/Sidebar";
 import Navbar from "../components/Navbar/Navbar";
+import Footer from "../components/Footer/Footer";
 
 class BaseLayout extends Component {
   constructor(props) {
@@ -28,6 +29,10 @@ class BaseLayout extends Component {
 
           <div id="content" className={this.state.toggleClass}>
             {this.props.children}
+
+            <div className="container-fluid footer-container">
+              <Footer />
+            </div>
           </div>
         </div>
       </div>

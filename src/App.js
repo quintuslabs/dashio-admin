@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { createBrowserHistory } from "history";
 import { Router, Route } from "react-router-dom";
+
 import routes from "./routes";
 class App extends Component {
   constructor(props) {
