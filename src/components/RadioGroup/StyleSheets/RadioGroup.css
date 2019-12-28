@@ -1,0 +1,27 @@
+.form-label.capitalize {
+    text-transform: capitalize;
+}
+.radio-group {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.form-radio {
+    position: relative;
+    display: block;
+    padding-left: 1.25rem;
+}
+
+.form-radio-inline {
+    display: inline-flex;
+    align-items: center;
+    padding-left: 0;
+    margin-right: .75rem;
+}
+.form-radio-inline .form-radio-input {
+    position: static;
+    margin-top: 0;
+    margin-right: .3125rem;
+    margin-left: 0;
+}

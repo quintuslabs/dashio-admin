@@ -46,11 +46,9 @@ class OrderSection extends Component {
                         </td>
                         <td> #5469 </td>
                         <td>
-                          {" "}
                           <span className="name">Louis Stanley</span>{" "}
                         </td>
                         <td>
-                          {" "}
                           <span className="product">iMax</span>{" "}
                         </td>
                         <td>
@@ -75,11 +73,9 @@ class OrderSection extends Component {
                         </td>
                         <td> #5468 </td>
                         <td>
-                          {" "}
                           <span className="name">Gregory Dixon</span>{" "}
                         </td>
                         <td>
-                          {" "}
                           <span className="product">iPad</span>{" "}
                         </td>
                         <td>
@@ -104,11 +100,9 @@ class OrderSection extends Component {
                         </td>
                         <td> #5467 </td>
                         <td>
-                          {" "}
                           <span className="name">Catherine Dixon</span>{" "}
                         </td>
                         <td>
-                          {" "}
                           <span className="product">SSD</span>{" "}
                         </td>
                         <td>
@@ -133,11 +127,9 @@ class OrderSection extends Component {
                         </td>
                         <td> #5466 </td>
                         <td>
-                          {" "}
                           <span className="name">Mary Silva</span>{" "}
                         </td>
                         <td>
-                          {" "}
                           <span className="product">Magic Mouse</span>{" "}
                         </td>
                         <td>
@@ -162,11 +154,9 @@ class OrderSection extends Component {
                         </td>
                         <td> #5465 </td>
                         <td>
-                          {" "}
                           <span className="name">Johnny Stephens</span>{" "}
                         </td>
                         <td>
-                          {" "}
                           <span className="product">Monitor</span>{" "}
                         </td>
                         <td>

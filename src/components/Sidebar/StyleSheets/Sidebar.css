@@ -62,7 +62,7 @@ div#sticky-sidebar {
 #sidebar ul li.active>a,
 a[aria-expanded="true"] {
     box-shadow: inset 0.1875rem 0 0 #007bff;
-    background-color: #f5f6f8;
+    background-color: #ffffff;
     color: #007bff;
 }
 
