@@ -376,3 +376,7 @@ a.canvasjs-chart-credit {
     right: 0;
     top: 0;
 }
+
+ li.menu-item-has-children a:hover:before {
+    border-color: #03a9f3 #03a9f3 transparent transparent;
+}

@@ -6,11 +6,14 @@
 
 #content {
     display: flex;
-    min-height: 100vh;
+    min-height: 90vh;
     transition: all 0.3s;
     flex-direction: column;
     width: 100%;
     margin-left: 250px;
+}
+.layout-Container {
+    min-height: 84vh;
 }
 
 div#content.active {

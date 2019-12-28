@@ -28,7 +28,7 @@ class BaseLayout extends Component {
           </div>
 
           <div id="content" className={this.state.toggleClass}>
-            {this.props.children}
+            <div className="layout-Container">{this.props.children}</div>
 
             <div className="container-fluid footer-container">
               <Footer />

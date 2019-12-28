@@ -3,7 +3,7 @@
     max-width: 250px;
     color: #fff;
     transition: all 0.3s;
-    height: 90vh;
+    height: 93vh;
     overflow-y: auto;
     overflow-x: hidden;
     display: flex;
@@ -81,7 +81,7 @@ a[data-toggle="collapse"] {
 ul ul a {
     font-size: 0.9em !important;
     padding-left: 30px !important;
-    background: #6d7fcc;
+    
 }
 
 ul.CTAs {
@@ -128,13 +128,16 @@ a, a:hover, a:focus {
     text-decoration: none;
     font-weight: 400;
     color: #3d5170;
-    background: #fff;
+
     overflow: hidden;
     text-overflow: ellipsis;
     transition: box-shadow .2s ease,color .2s ease,background-color .2s ease;
     font-size: .85rem;
     will-change: background-color,box-shadow,color;
     padding: .9375rem 1.5625rem;
+}
+ul.sub-menu.children.dropdown-menu.show {
+    background-color: #f5f5f5;
 }
 /* ---------------------------------------------------
     MEDIAQUERIES
@@ -149,4 +152,69 @@ a, a:hover, a:focus {
     #sidebarCollapse span {
         display: none;
     }
+}
+
+.navbar .navbar-nav li.menu-item-has-children a:before {
+    content: "";
+    position: absolute;
+    top: 23px;
+    right: 0;
+    width: 8px;
+    height: 8px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #607d8b #607d8b transparent transparent;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    -webkit-transition: all .25s ease;
+    transition: all .25s ease;
+}
+
+.navbar .navbar-nav li.menu-item-has-children.show .sub-menu {
+    max-height: 1000px;
+    opacity: 1;
+    position: static!important;
+}
+.navbar .navbar-nav li.menu-item-has-children .sub-menu {
+    background: #fff;
+    border: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    overflow-y: hidden;
+    padding: 0 0 0 35px;
+}
+@media (min-width: 576px){
+.navbar-expand-sm .navbar-nav .dropdown-menu {
+    position: absolute;
+}
+}
+.navbar-nav .dropdown-menu {
+    position: static;
+    float: none;
+}
+.dropdown-menu.show {
+    display: block;
+}
+.dropdown-menu {
+    border-radius: 0;
+    -webkit-transform: none!important;
+    transform: none!important;
+}
+
+.dropdown-menu {
+    position: inherit !important;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    float: none;
+    z-index: 1000;
+    display: none;
+    font-size: 1rem;
+    color: #212529;
+    text-align: left;
+    list-style: none;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 0px solid rgba(0,0,0,.15) !important;
+    border-radius: .25rem;
 }

@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { withRouter } from "react-router-dom";
-
 import "./StyleSheets/Sidebar.css";
 function Sidebar(props) {
   const [active, setActive] = useState("");
+  const [dropdownToggle, setDropDownToggle] = useState(false);
   useEffect(() => {
     setActive(props.location.pathname);
   }, [props.location.pathname, active]);
@@ -24,13 +24,100 @@ function Sidebar(props) {
             </a>
           </li>
 
-          <li className={active === "/components" ? "active" : null}>
-            <a href="/components">
-              <div className="menu-icon">
-                <i className="fa fa-cogs nav_icon" aria-hidden="true"></i>
-              </div>
-              <span className="menu-title">Components</span>
+          <li
+            class="menu-item-has-children dropdown"
+            onClick={() => setDropDownToggle(!dropdownToggle)}
+          >
+            <a
+              href="#"
+              class="dropdown-toggle"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              <i class="menu-icon fa fa-cogs"></i>Components
             </a>
+            <ul
+              class={
+                dropdownToggle
+                  ? "sub-menu children dropdown-menu show"
+                  : "sub-menu children dropdown-menu"
+              }
+            >
+              <li>
+                <a href="/components">
+                  <div className="menu-icon">
+                    <i class="fa fa-puzzle-piece"></i>
+                  </div>
+                  <span className="menu-title">Buttons</span>
+                </a>
+              </li>
+              <li>
+                <a href="/components">
+                  <div className="menu-icon">
+                    <i class="fa fa-id-badge"></i>
+                  </div>
+                  <span className="menu-title">Badges</span>
+                </a>
+              </li>
+              <li>
+                <a href="/components">
+                  <div className="menu-icon">
+                    <i class="fa fa-bars"></i>
+                  </div>
+                  <span className="menu-title">Tabs</span>
+                </a>
+              </li>
+
+              <li>
+                <a href="/components">
+                  <div className="menu-icon">
+                    <i class="fa fa-id-card-o"></i>
+                  </div>
+                  <span className="menu-title">Cards</span>
+                </a>
+              </li>
+              <li>
+                <a href="/components">
+                  <div className="menu-icon">
+                    <i class="fa fa-exclamation-triangle"></i>
+                  </div>
+                  <span className="menu-title">Alerts</span>
+                </a>
+              </li>
+              <li>
+                <a href="/components">
+                  <div className="menu-icon">
+                    <i class="fa fa-spinner"></i>
+                  </div>
+                  <span className="menu-title">Progress Bars</span>
+                </a>
+              </li>
+              <li>
+                <a href="/components">
+                  <div className="menu-icon">
+                    <i class="fa fa-fire"></i>
+                  </div>
+                  <span className="menu-title">Modals</span>
+                </a>
+              </li>
+              <li>
+                <a href="/components">
+                  <div className="menu-icon">
+                    <i class="fa fa-book"></i>
+                  </div>
+                  <span className="menu-title">Switches</span>
+                </a>
+              </li>
+              <li>
+                <a href="/components">
+                  <div className="menu-icon">
+                    <i class="fa fa-th"></i>
+                  </div>
+                  <span className="menu-title">Grids</span>
+                </a>
+              </li>
+            </ul>
           </li>
 
           <li className={active === "/ui-elements" ? "active" : null}>
