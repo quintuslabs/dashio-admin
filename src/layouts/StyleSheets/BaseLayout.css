@@ -9,7 +9,7 @@
     min-height: 90vh;
     transition: all 0.3s;
     flex-direction: column;
-    width: 100%;
+    width: calc(100vw - 270px);
     margin-left: 250px;
 }
 .layout-Container {
@@ -26,6 +26,7 @@ div#content.active {
 @media (max-width: 768px) {
     #content {
         margin-left: 0px;
+        width: 100vw;
     }
    
 }

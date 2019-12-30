@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import DonutCharts from "./DoughnutChart";
-import DoughnutChart from "./DoughnutChart";
+
+import PieChart from "./PieChart";
 
 class OrderSection extends Component {
   constructor(props) {
@@ -189,7 +189,7 @@ class OrderSection extends Component {
                 <div className="card br-0">
                   <div className="card-body">
                     <div className="chart-container ov-h">
-                      <DoughnutChart />
+                   <PieChart/>
                     </div>
                   </div>
                 </div>
