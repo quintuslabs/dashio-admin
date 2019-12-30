@@ -5,7 +5,7 @@ import { Redirect } from "react-router-dom";
 import { BaseLayout } from "./layouts";
 // Route Views
 import Dashboard from "./views/Dashboard/Dashboard";
-import Components from "./views/Components/Components";
+import Buttons from "./views/Components/ButtonsContainer";
 import UIElements from "./views/UIElements/UIElements";
 import Widgets from "./views/Widgets/Widgets";
 import Forms from "./views/Forms/Forms";
@@ -25,11 +25,13 @@ var routes = [
     layout: BaseLayout,
     component: Dashboard
   },
+
   {
-    path: "/components",
+    path: "/components/buttons",
     layout: BaseLayout,
-    component: Components
+    component: Buttons
   },
+
   {
     path: "/ui-elements",
     layout: BaseLayout,

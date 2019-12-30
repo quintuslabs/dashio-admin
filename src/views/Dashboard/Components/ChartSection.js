@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import AreaChart from "./AreaChart";
+import ProgressBar from "./ProgressBar";
 class ChartSection extends Component {
   constructor(props) {
     super(props);
@@ -21,62 +22,33 @@ class ChartSection extends Component {
               </div>
               <div className="col-lg-4">
                 <div className="card-body">
-                  <div className="progress-box progress-1">
-                    <h4 className="por-title">Visits</h4>
-                    <div className="por-txt">96,930 Users (40%)</div>
-                    <div className="progress mb-2" style={{ height: 5 }}>
-                      <div
-                        className="progress-bar bg-flat-color-1"
-                        role="progressbar"
-                        style={{ width: "40%" }}
-                        aria-valuenow="25"
-                        aria-valuemin="0"
-                        aria-valuemax="100"
-                      ></div>
-                    </div>
-                  </div>
-                  <div className="progress-box progress-2">
-                    <h4 className="por-title">Bounce Rate</h4>
-                    <div className="por-txt">3,220 Users (24%)</div>
-                    <div className="progress mb-2" style={{ height: 5 }}>
-                      <div
-                        className="progress-bar bg-flat-color-2"
-                        role="progressbar"
-                        style={{ width: "24%" }}
-                        aria-valuenow="25"
-                        aria-valuemin="0"
-                        aria-valuemax="100"
-                      ></div>
-                    </div>
-                  </div>
-                  <div className="progress-box progress-2">
-                    <h4 className="por-title">Unique Visitors</h4>
-                    <div className="por-txt">29,658 Users (60%)</div>
-                    <div className="progress mb-2" style={{ height: 5 }}>
-                      <div
-                        className="progress-bar bg-flat-color-3"
-                        role="progressbar"
-                        style={{ width: "60%" }}
-                        aria-valuenow="60"
-                        aria-valuemin="0"
-                        aria-valuemax="100"
-                      ></div>
-                    </div>
-                  </div>
-                  <div className="progress-box progress-2">
-                    <h4 className="por-title">Targeted Visitors</h4>
-                    <div className="por-txt">99,658 Users (90%)</div>
-                    <div className="progress mb-2" style={{ height: 5 }}>
-                      <div
-                        className="progress-bar bg-flat-color-4"
-                        role="progressbar"
-                        style={{ width: "90%" }}
-                        aria-valuenow="90"
-                        aria-valuemin="0"
-                        aria-valuemax="100"
-                      ></div>
-                    </div>
-                  </div>
+                  <ProgressBar
+                    progressTitle={"Visits"}
+                    progressDesc={"96,930 Users (40%)"}
+                    progress={"40%"}
+                    color={"bg-flat-color-1"}
+                  />
+
+                  <ProgressBar
+                    progressTitle={"Bounce Rate"}
+                    progressDesc={"3,220 Users (24%)"}
+                    progress={"24%"}
+                    color={"bg-flat-color-2"}
+                  />
+
+                  <ProgressBar
+                    progressTitle={"Unique Visitors"}
+                    progressDesc={"29,658 Users (60%)"}
+                    progress={"60%"}
+                    color={"bg-flat-color-3"}
+                  />
+
+                  <ProgressBar
+                    progressTitle={"Targeted Visitors"}
+                    progressDesc={"99,658 Users (90%)"}
+                    progress={"90%"}
+                    color={"bg-flat-color-4"}
+                  />
                 </div>
               </div>
             </div>

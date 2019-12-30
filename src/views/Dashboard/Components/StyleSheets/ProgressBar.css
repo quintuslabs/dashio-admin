@@ -1,0 +1,36 @@
+
+.bg-flat-color-1 {
+    background: #00c292 !important;
+}
+.bg-flat-color-2 {
+    background: #ab8ce4 !important;
+}
+.bg-flat-color-3 {
+    background: #03a9f3 !important;
+}
+.bg-flat-color-4 {
+    background: #fb9678 !important;
+}
+
+.progress-box .por-title {
+    font-size: 1em;
+    font-weight: 600;
+    color: #868e96;
+    padding-bottom: 5px;
+}
+.progress-box .por-txt {
+    font-size: 13px;
+    padding-bottom: 5px;
+}
+.progress-bar {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    transition: width .6s ease;
+}

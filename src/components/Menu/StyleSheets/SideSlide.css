@@ -1,0 +1,74 @@
+
+/*--- Nav |  01  |  Side-Slide --*/
+
+nav.side-slide {
+  background-color: #F75D5D;
+  top: 0;
+  left: -285px; 
+  height: 100%;
+  position: fixed;
+  width: 285px;
+  z-index: 999999999;
+  transition: 1s;
+}
+
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+nav.side-slide.openSlide {
+    transition: 1s;
+    left: 0;
+}
+
+ul, ol, menu {
+    list-style: none;
+}
+nav.side-slide h3 {
+    color: #FFF;
+    left: 240px;
+  }
+
+nav.side-slide ul{
+    margin-top: 70px;
+    border-top: 1px solid #F44646;
+    padding-left: 0;
+  }
+
+  nav.side-slide li {
+    text-align: center;
+    border-bottom: 1px solid #F44646;
+    line-height: 60px;
+  }
+
+  nav.side-slide li:hover {
+      background-color: #F44646;
+    }
+
+  nav.side-slide a {
+    color: #EDEDED;
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-decoration: none;
+
+  }
+
+  nav.side-slide a:hover {
+      color: #fff;
+    }
+   
+    h3.nav01 {
+        position: absolute;
+        font-weight: bold;
+        cursor: pointer;
+        padding: 5px;
+    }
+
+

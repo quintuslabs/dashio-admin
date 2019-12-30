@@ -1,0 +1,134 @@
+.button{
+    display: inline-block;
+    font-weight: 400;
+    color: #212529;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    margin: 10px;
+    -webkit-transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.button-primary {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.button-secondary {
+    color: #fff;
+    background-color: #6c757d;
+    border-color: #6c757d;
+}
+
+.button-success {
+    color: #fff;
+    background-color: #28a745;
+    border-color: #28a745;
+}
+
+.button-warning {
+    color: #212529;
+    background-color: #ffc107;
+    border-color: #ffc107;
+}
+
+.button-danger {
+    color: #fff;
+    background-color: #dc3545;
+    border-color: #dc3545;
+}
+
+.button-info {
+    color: #fff;
+    background-color: #17a2b8;
+    border-color: #17a2b8;
+}
+
+.button-light {
+    color: #212529;
+    background-color: #f8f9fa;
+    border-color: #f8f9fa;
+}
+
+.button-dark {
+    color: #fff;
+    background-color: #343a40;
+    border-color: #343a40;
+}
+
+.button-link {
+    font-weight: 400;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.button-outline-primary {
+    color: #007bff;
+    border-color: #007bff;
+}
+
+.button-outline-secondary {
+    color: #6c757d;
+    border-color: #6c757d;
+}
+
+.button-outline-success {
+    color: #28a745;
+    border-color: #28a745;
+}
+
+.button-outline-warning {
+    color: #ffc107;
+    border-color: #ffc107;
+}
+
+.button-outline-danger {
+    color: #dc3545;
+    border-color: #dc3545;
+}
+
+.button-outline-info {
+    color: #17a2b8;
+    border-color: #17a2b8;
+}
+.button-outline-light {
+    color: #f8f9fa;
+    border-color: #f8f9fa;
+}
+.button-outline-dark {
+    color: #343a40;
+    border-color: #343a40;
+}
+
+.button-lg {
+    padding: .5rem 1rem;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    border-radius: .3rem;
+}
+
+.button-sm {
+    padding: .25rem .5rem;
+    font-size: .875rem;
+    line-height: 1.5;
+    border-radius: .2rem;
+}
+
+.button-circle{
+  text-align: center;
+  padding: 6px 0;
+  font-size: 12px;
+  line-height: 1.428571429;
+  border-radius: 30px;
+  padding: 10px;
+}

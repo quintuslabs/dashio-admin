@@ -1,0 +1,101 @@
+.slide_right {
+    border:none;
+    background-position: right;
+    background: linear-gradient(to right, #00356f 50%,#007bff 50%) no-repeat scroll right bottom / 210% 100% #007bff;
+    -webkit-transition: all 200ms ease;
+    -moz-transition: all 200ms ease;
+    transition: all 200ms ease;
+   }
+   .slide_right:hover, .slide_right.active {
+    background-position: left;
+    color: #ffffff;
+   }
+   /* slide to right alt colors */
+   .slide_right_alt {
+    border:none;
+    background-position: right;
+    background: linear-gradient(to right, #007bff 50%,#00356f 50%) no-repeat scroll right bottom / 210% 100% #007bff;
+    -webkit-transition: all 200ms ease;
+    -moz-transition: all 200ms ease;
+    transition: all 200ms ease;
+   }
+   .slide_right_alt:hover, .slide_right_alt.active {
+    background-position: left;
+    color: #ffffff;
+   }
+   /* slide to left */
+   .slide_left {
+    border:none;
+    background-position: left;
+    background: linear-gradient(to left, #00356f 50%,#007bff 50%) no-repeat scroll left bottom / 210% 100% #007bff;
+    -webkit-transition: all 200ms ease;
+    -moz-transition: all 200ms ease;
+    transition: all 200ms ease;
+   }
+   .slide_left:hover, .slide_left.active {
+    background-position: right;
+    color: #ffffff;
+   }
+   /* slide to left alt colors */
+   .slide_left_alt {
+    border:none;
+    background-position: left;
+    background: linear-gradient(to left, #007bff 50%,#00356f 50%) no-repeat scroll left bottom / 210% 100% #007bff;
+    -webkit-transition: all 200ms ease;
+    -moz-transition: all 200ms ease;
+    transition: all 200ms ease;
+   }
+   .slide_left_alt:hover, .slide_left_alt.active {
+    background-position: right;
+    color: #ffffff;
+   }
+   /* slide down */
+   .slide_top {
+    border:none;
+    background-position: bottom;
+    background: linear-gradient(to bottom, #00356f 50%,#007bff 50%) no-repeat scroll bottom right / 100% 210% #007bff;
+    -webkit-transition: all 200ms ease;
+    -moz-transition: all 200ms ease; 
+    transition: all 200ms ease;
+   }
+   .slide_top:hover, .slide_top.active {
+    background-position: top;
+    color: #ffffff;
+   }
+   /* slide down alt colors */
+   .slide_top_alt {
+    border:none;
+    background-position: bottom;
+    background: linear-gradient(to bottom, #007bff 50%,#00356f 50%) no-repeat scroll bottom right / 100% 210% #007bff;
+    transition: all 200ms ease;
+   }
+   .slide_top_alt:hover, .slide_top_alt.active {
+    background-position: top;
+    color: #ffffff;
+   }
+   /* slide up */
+   .slide_bottom {
+    border:none;
+    background-position: top;
+    background: linear-gradient(to top, #00356f 50%,#007bff 50%) no-repeat scroll top right / 100% 210% #007bff;
+    -webkit-transition: all 200ms ease;
+    -moz-transition: all 200ms ease; 
+    transition: all 200ms ease;
+   }
+   .slide_bottom:hover, .slide_bottom.active {
+    background-position: bottom;
+    color: #ffffff;
+   }
+   /* slide up alt colors */
+   .slide_bottom_alt {
+    border:none;
+    background-position: top;
+    background: linear-gradient(to top, #007bff 50%,#00356f 50%) no-repeat scroll top right / 100% 210% #007bff;
+    -webkit-transition: all 200ms ease;
+    -moz-transition: all 200ms ease; 
+    transition: all 200ms ease;
+   }
+   .slide_bottom_alt:hover, .slide_bottom_alt.active {
+    background-position: bottom;
+    color: #ffffff;
+   }

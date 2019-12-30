@@ -44,8 +44,10 @@ function Sidebar(props) {
                   : "sub-menu children dropdown-menu"
               }
             >
-              <li>
-                <a href="/components">
+              <li
+                className={active === "/components/buttons" ? "active" : null}
+              >
+                <a href="/components/buttons">
                   <div className="menu-icon">
                     <i class="fa fa-puzzle-piece"></i>
                   </div>

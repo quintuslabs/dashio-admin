@@ -1,0 +1,20 @@
+.floating-container .floating-button {
+    position: absolute;
+    width: 65px;
+    height: 65px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    background: #2cb3f0;
+    bottom: 0;
+    border-radius: 50%;
+    right: 0;
+    color: white;
+    line-height: 65px;
+    text-align: center;
+    font-size: 23px;
+    z-index: 99999999;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.329);
+    cursor: pointer;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
