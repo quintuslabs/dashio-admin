@@ -1,0 +1,53 @@
+.breadcrumbs {
+    float: left;
+   
+    padding: 0 1.875em;
+    width: 100%;
+    
+}
+
+.breadcrumbs .breadcrumbs-inner {
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0,0,0,.08);
+}
+.page-header .breadcrumb>li+li:before {
+    padding: 0 5px;
+    color: #ccc;
+    content: "/\00a0";
+}
+.page-header {
+    min-height: 50px;
+    margin: 0;
+    padding: 0 15px;
+    background: #fff;
+    border-bottom: 0;
+}
+
+.float-right {
+    float: right!important;
+}
+
+.page-header .breadcrumb {
+    margin: 0;
+    padding: 13.5px 0;
+    background: #fff;
+    text-transform: capitalize;
+}
+.text-right {
+    text-align: right!important;
+}
+
+.breadcrumb {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    border-radius: .25rem;
+}
+
+.breadcrumb>li>a, button {
+    text-decoration: none;
+    outline: none!important;
+    color: #878787;
+    -webkit-transition: all .25s ease;
+    transition: all .25s ease;
+}

@@ -4,6 +4,7 @@ import "./StyleSheets/Button.css";
 
 const Button = props => (
   <button type={props.type} className={props.className} onClick={props.onClick}>
+    <i className={props.icon}> </i>
     {props.title}
   </button>
 );
@@ -12,6 +13,7 @@ Button.propTypes = {
   type: PropTypes.string.isRequired,
   onClick: PropTypes.func.isRequired,
   title: PropTypes.string,
+  icon: PropTypes.string,
   className: PropTypes.string
 };
 
