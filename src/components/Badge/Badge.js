@@ -1,26 +1,24 @@
-import React, { Component } from 'react';
-
+import React, { Component } from "react";
 
 import PropTypes from "prop-types";
-import "./StyleSheets/Badges.css";
+import "./StyleSheets/Badge.css";
 
-const Badges = props => (
+const Badge = props => (
   <span className={props.className} onClick={props.onClick}>
     {props.title}
   </span>
 );
 
-Badges.propTypes = {
+Badge.propTypes = {
   onClick: PropTypes.func.isRequired,
   title: PropTypes.string,
   className: PropTypes.string
 };
 
 // Specifies the default values for props:
-Badges.defaultProps = {
-  title: "Badges",
+Badge.defaultProps = {
+  title: "Badge",
   className: "badge badge-primary badge-lg"
 };
 
-
-export default Badges;
+export default Badge;
