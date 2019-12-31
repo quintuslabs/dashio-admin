@@ -132,3 +132,8 @@
   border-radius: 30px;
   padding: 10px;
 }
+
+i.fa {
+    margin-left: .5em;
+    margin-right: .5em;
+}

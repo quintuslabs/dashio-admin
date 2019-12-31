@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Button, HoverableButton } from "../../components/Button";
+import Breadcrumb from "../../components/BreadCrumb/Breadcrumb";
 
 class ButtonsContainer extends Component {
   constructor(props) {
@@ -7,8 +8,24 @@ class ButtonsContainer extends Component {
     this.state = {};
   }
   render() {
+    const path = [
+      {
+        title: "Dashboard",
+        url: "/dashboard"
+      },
+
+      {
+        title: "Components",
+        url: "#"
+      },
+      {
+        title: "buttons",
+        url: "/components/buttons"
+      }
+    ];
     return (
       <div className="main-content-container p-4 container-fluid">
+        <Breadcrumb title={"Buttons"} path={path} />
         <div className="right-panel">
           <div className="card">
             <div className="card-body">
@@ -227,6 +244,45 @@ class ButtonsContainer extends Component {
                     type={"button"}
                     title={"Button Link"}
                     className={"button button-link button-sm  button-circle"}
+                  />
+                </div>
+                <div className="row">
+                  <Button
+                    type={"button"}
+                    title={"Button Primary"}
+                    icon={"fa fa-star"}
+                    className={"button button-primary button-sm"}
+                  />
+
+                  <Button
+                    type={"button"}
+                    title={"Button Secondary"}
+                    icon={"fa fa-lightbulb-o"}
+                    className={"button button-secondary button-sm"}
+                  />
+                  <Button
+                    type={"button"}
+                    title={"Button Success"}
+                    icon={"fa fa-magic"}
+                    className={"button button-success button-sm"}
+                  />
+                  <Button
+                    type={"button"}
+                    title={"Button Warning"}
+                    icon={"fa fa-rss"}
+                    className={"button button-warning button-sm"}
+                  />
+                  <Button
+                    type={"button"}
+                    title={"Button Danger"}
+                    icon={"fa fa-map-marker"}
+                    className={"button button-danger button-sm"}
+                  />
+                  <Button
+                    type={"button"}
+                    title={"Button Info"}
+                    icon={"fa fa-link"}
+                    className={"button button-info button-sm"}
                   />
                 </div>
                 <div className="row">

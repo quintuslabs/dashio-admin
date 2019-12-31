@@ -1,3 +1,8 @@
+.main-content-container.p-4.container-fluid {
+    display: flex;
+    flex-direction: column;
+}
+
 .right-panel {
     padding: 1.875em;
 }
