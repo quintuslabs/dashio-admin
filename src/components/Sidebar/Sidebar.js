@@ -54,8 +54,8 @@ function Sidebar(props) {
                   <span className="menu-title">Buttons</span>
                 </a>
               </li>
-              <li>
-                <a href="/components">
+              <li className={active === "/components/badge" ? "active" : null}>
+                <a href="/components/badge">
                   <div className="menu-icon">
                     <i class="fa fa-id-badge"></i>
                   </div>
@@ -71,8 +71,8 @@ function Sidebar(props) {
                 </a>
               </li>
 
-              <li>
-                <a href="/components">
+              <li className={active === "/components/card" ? "active" : null}>
+                <a href="/components/card">
                   <div className="menu-icon">
                     <i class="fa fa-id-card-o"></i>
                   </div>

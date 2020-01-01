@@ -3,22 +3,17 @@ import React, { Component } from "react";
 import PropTypes from "prop-types";
 import "./StyleSheets/Badge.css";
 
-const Badge = props => (
-  <span className={props.className} onClick={props.onClick}>
-    {props.title}
-  </span>
-);
+const Badge = props => <span className={props.class}>{props.value}</span>;
 
 Badge.propTypes = {
-  onClick: PropTypes.func.isRequired,
-  title: PropTypes.string,
-  className: PropTypes.string
+  value: PropTypes.string,
+  class: PropTypes.string
 };
 
 // Specifies the default values for props:
 Badge.defaultProps = {
-  title: "Badge",
-  className: "badge badge-primary badge-lg"
+  value: "0",
+  class: "badge badge-primary badge-lg"
 };
 
 export default Badge;

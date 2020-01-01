@@ -6,6 +6,8 @@ import { BaseLayout } from "./layouts";
 // Route Views
 import Dashboard from "./views/Dashboard/Dashboard";
 import Buttons from "./views/Components/ButtonsContainer";
+import Badge from "./views/Components/BadgeContainer";
+import Card from "./views/Components/CardsContainer";
 import UIElements from "./views/UIElements/UIElements";
 import Widgets from "./views/Widgets/Widgets";
 import Forms from "./views/Forms/Forms";
@@ -30,6 +32,18 @@ var routes = [
     path: "/components/buttons",
     layout: BaseLayout,
     component: Buttons
+  },
+
+  {
+    path: "/components/badge",
+    layout: BaseLayout,
+    component: Badge
+  },
+
+  {
+    path: "/components/card",
+    layout: BaseLayout,
+    component: Card
   },
 
   {

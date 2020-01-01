@@ -9,7 +9,7 @@ const Breadcrumb = props => {
           <div class="col-sm-4">
             <div class="page-header float-left">
               <div class="page-title">
-                <h1>{props.title}</h1>
+                <h3>{props.title}</h3>
               </div>
             </div>
           </div>
