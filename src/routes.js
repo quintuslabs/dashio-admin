@@ -8,6 +8,8 @@ import Dashboard from "./views/Dashboard/Dashboard";
 import Buttons from "./views/Components/ButtonsContainer";
 import Badge from "./views/Components/BadgeContainer";
 import Card from "./views/Components/CardsContainer";
+import Alert from "./views/Components/AlertContainer";
+import ProgressBar from "./views/Components/ProgressBarContainer";
 import UIElements from "./views/UIElements/UIElements";
 import Widgets from "./views/Widgets/Widgets";
 import Forms from "./views/Forms/Forms";
@@ -44,6 +46,16 @@ var routes = [
     path: "/components/card",
     layout: BaseLayout,
     component: Card
+  },
+  {
+    path: "/components/alert",
+    layout: BaseLayout,
+    component: Alert
+  },
+  {
+    path: "/components/progressbar",
+    layout: BaseLayout,
+    component: ProgressBar
   },
 
   {

@@ -25,20 +25,20 @@ function Sidebar(props) {
           </li>
 
           <li
-            class="menu-item-has-children dropdown"
+            className="menu-item-has-children dropdown"
             onClick={() => setDropDownToggle(!dropdownToggle)}
           >
             <a
               href="#"
-              class="dropdown-toggle"
+              className="dropdown-toggle"
               data-toggle="dropdown"
               aria-haspopup="true"
               aria-expanded="false"
             >
-              <i class="menu-icon fa fa-cogs"></i>Components
+              <i className="menu-icon fa fa-cogs"></i>Components
             </a>
             <ul
-              class={
+              className={
                 dropdownToggle
                   ? "sub-menu children dropdown-menu show"
                   : "sub-menu children dropdown-menu"
@@ -49,7 +49,7 @@ function Sidebar(props) {
               >
                 <a href="/components/buttons">
                   <div className="menu-icon">
-                    <i class="fa fa-puzzle-piece"></i>
+                    <i className="fa fa-puzzle-piece"></i>
                   </div>
                   <span className="menu-title">Buttons</span>
                 </a>
@@ -57,66 +57,38 @@ function Sidebar(props) {
               <li className={active === "/components/badge" ? "active" : null}>
                 <a href="/components/badge">
                   <div className="menu-icon">
-                    <i class="fa fa-id-badge"></i>
+                    <i className="fa fa-id-badge"></i>
                   </div>
                   <span className="menu-title">Badges</span>
                 </a>
               </li>
-              <li>
-                <a href="/components">
-                  <div className="menu-icon">
-                    <i class="fa fa-bars"></i>
-                  </div>
-                  <span className="menu-title">Tabs</span>
-                </a>
-              </li>
-
               <li className={active === "/components/card" ? "active" : null}>
                 <a href="/components/card">
                   <div className="menu-icon">
-                    <i class="fa fa-id-card-o"></i>
+                    <i className="fa fa-id-card-o"></i>
                   </div>
                   <span className="menu-title">Cards</span>
                 </a>
               </li>
-              <li>
-                <a href="/components">
+
+              <li className={active === "/components/alert" ? "active" : null}>
+                <a href="/components/alert">
                   <div className="menu-icon">
-                    <i class="fa fa-exclamation-triangle"></i>
+                    <i className="fa fa-exclamation-triangle"></i>
                   </div>
                   <span className="menu-title">Alerts</span>
                 </a>
               </li>
-              <li>
-                <a href="/components">
+              <li
+                className={
+                  active === "/components/progressbar" ? "active" : null
+                }
+              >
+                <a href="/components/progressbar">
                   <div className="menu-icon">
-                    <i class="fa fa-spinner"></i>
+                    <i className="fa fa-spinner"></i>
                   </div>
                   <span className="menu-title">Progress Bars</span>
-                </a>
-              </li>
-              <li>
-                <a href="/components">
-                  <div className="menu-icon">
-                    <i class="fa fa-fire"></i>
-                  </div>
-                  <span className="menu-title">Modals</span>
-                </a>
-              </li>
-              <li>
-                <a href="/components">
-                  <div className="menu-icon">
-                    <i class="fa fa-book"></i>
-                  </div>
-                  <span className="menu-title">Switches</span>
-                </a>
-              </li>
-              <li>
-                <a href="/components">
-                  <div className="menu-icon">
-                    <i class="fa fa-th"></i>
-                  </div>
-                  <span className="menu-title">Grids</span>
                 </a>
               </li>
             </ul>

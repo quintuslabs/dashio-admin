@@ -36,63 +36,51 @@ class BadgeContainer extends Component {
                 <div className="row">
                   <div style={{ padding: 10 }}>
                     <a href="#">
-                      News <Badge class={"badge badge-primary"} value={"5"} />
+                      News <Badge className={"badge badge-primary"}>5</Badge>
                     </a>
                   </div>
                   <div style={{ padding: 10 }}>
                     <a href="#">
                       Comments{" "}
-                      <Badge class={"badge badge-warning"} value={"10"} />
+                      <Badge className={"badge badge-warning"}>10</Badge>
                     </a>
                   </div>
                   <div style={{ padding: 10 }}>
                     <a href="#">
                       Updates{" "}
-                      <Badge class={"badge badge-success"} value={"2"} />
+                      <Badge className={"badge badge-success"}>50</Badge>
                     </a>
                   </div>
                 </div>
                 <div className="row">
-                  <Badge class="badge badge-primary m-10" value={"Primary"} />
-                  <Badge class="badge badge-secondary" value={"Secondary"} />
-                  <Badge class="badge badge-success" value={"Success"} />
-                  <Badge class="badge badge-danger" value={"Danger"} />
-                  <Badge class="badge badge-warning" value={"Warning"} />
-                  <Badge class="badge badge-info" value={"Info"} />
-                  <Badge class="badge badge-light" value={"Light"} />
-                  <Badge class="badge badge-dark" value={"Dark"} />
+                  <Badge className="badge badge-primary">Primary</Badge>
+                  <Badge className="badge badge-secondary">Secondary</Badge>
+                  <Badge className="badge badge-success">Success</Badge>
+                  <Badge className="badge badge-danger">Danger</Badge>
+                  <Badge className="badge badge-warning">Warning</Badge>
+                  <Badge className="badge badge-info">Info</Badge>
+                  <Badge className="badge badge-light">Light</Badge>
+                  <Badge className="badge badge-dark"> Dark</Badge>
                 </div>
-
                 <div className="row" style={{ marginTop: 20 }}>
-                  <Button
-                    type="button"
-                    className="btn btn-primary m-l-10 m-b-10"
-                    title="Primary"
-                  >
-                    <span class="badge badge-light">7</span>
-                  </Button>
-                  <Button
-                    type="button"
-                    className="btn btn-success m-l-10 m-b-10"
-                    title="Success"
-                  >
-                    <span class="badge badge-light">7</span>
-                  </Button>
-                  <Button type="button" className="btn btn-info m-l-10 m-b-10">
-                    Info <span class="badge badge-light">7</span>
-                  </Button>
-                  <Button
-                    type="button"
-                    className="btn btn-warning m-l-10 m-b-10"
-                  >
-                    Warning <span class="badge badge-light">7</span>
-                  </Button>
-                  <Button
-                    type="button"
-                    className="btn btn-danger m-l-10 m-b-10"
-                  >
-                    Danger <span class="badge badge-light">7</span>
-                  </Button>
+                  <Badge className="badge badge-primary badge-pill">
+                    Primary
+                  </Badge>
+                  <Badge className="badge badge-secondary badge-pill">
+                    Secondary
+                  </Badge>
+                  <Badge className="badge badge-success badge-pill">
+                    Success
+                  </Badge>
+                  <Badge className="badge badge-danger badge-pill">
+                    Danger
+                  </Badge>
+                  <Badge className="badge badge-warning badge-pill">
+                    Warning
+                  </Badge>
+                  <Badge className="badge badge-info badge-pill">Info</Badge>
+                  <Badge className="badge badge-light badge-pill">Light</Badge>
+                  <Badge className="badge badge-dark badge-pill"> Dark</Badge>
                 </div>
               </div>
             </div>

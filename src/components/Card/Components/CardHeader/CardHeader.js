@@ -2,11 +2,11 @@ import React from "react";
 import PropTypes from "prop-types";
 import classNames from "classnames";
 
-import "./Components/StyleSheets/Card.css";
+import "../StyleSheets/Card.css";
 
-const Card = props => (
+const CardHeader = props => (
   <div
-    className={classNames("card__card", props.className)}
+    className={classNames("card__header", props.className)}
     style={{
       backgroundColor: props.backgroundColor,
       color: props.fontColor,
@@ -17,17 +17,16 @@ const Card = props => (
   </div>
 );
 
-Card.propTypes = {
+CardHeader.propTypes = {
   children: PropTypes.node,
   backgroundColor: PropTypes.string,
   fontColor: PropTypes.string,
-  className: PropTypes.string,
-  borderRadius: PropTypes.string
+  className: PropTypes.string
 };
 
-Card.defaultProps = {
-  fontColor: "#000000",
-  borderRadius: ".625rem"
+CardHeader.defaultProps = {
+  backgroundColor: "#FFFFFF",
+  fontColor: "#000000"
 };
 
-export default Card;
+export default CardHeader;

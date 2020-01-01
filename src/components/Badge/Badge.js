@@ -1,19 +1,23 @@
 import React, { Component } from "react";
+import classNames from "classnames";
 
 import PropTypes from "prop-types";
 import "./StyleSheets/Badge.css";
 
-const Badge = props => <span className={props.class}>{props.value}</span>;
+const Badge = props => (
+  <span className={classNames("badge", props.className)}>{props.children}</span>
+);
 
 Badge.propTypes = {
+  children: PropTypes.node,
   value: PropTypes.string,
-  class: PropTypes.string
+  className: PropTypes.string
 };
 
 // Specifies the default values for props:
 Badge.defaultProps = {
   value: "0",
-  class: "badge badge-primary badge-lg"
+  className: "badge badge-primary badge-lg"
 };
 
 export default Badge;

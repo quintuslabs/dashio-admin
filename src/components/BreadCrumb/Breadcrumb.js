@@ -3,20 +3,20 @@ import "./StyleSheets/Breadcrumb.css";
 
 const Breadcrumb = props => {
   return (
-    <div class="breadcrumbs">
-      <div class="breadcrumbs-inner">
-        <div class="row m-0">
-          <div class="col-sm-4">
-            <div class="page-header float-left">
-              <div class="page-title">
+    <div className="breadcrumbs">
+      <div className="breadcrumbs-inner">
+        <div className="row m-0">
+          <div className="col-sm-4">
+            <div className="page-header float-left">
+              <div className="page-title">
                 <h3>{props.title}</h3>
               </div>
             </div>
           </div>
-          <div class="col-sm-8">
-            <div class="page-header float-right">
-              <div class="page-title">
-                <ol class="breadcrumb text-right">
+          <div className="col-sm-8">
+            <div className="page-header float-right">
+              <div className="page-title">
+                <ol className="breadcrumb text-right">
                   {props.path.map((item, index) => (
                     <li key={index}>
                       <a href={item.url}>{item.title}</a>
