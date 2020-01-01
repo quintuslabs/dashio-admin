@@ -11,7 +11,9 @@ const ProgressBar = props => (
       aria-valuenow={props.value}
       aria-valuemin="0"
       aria-valuemax="100"
-    ></div>
+    >
+      {props.children}
+    </div>
   </div>
 );
 
