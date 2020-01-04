@@ -5,11 +5,12 @@ import "./StyleSheets/HoverableButton.css";
 
 const HoverableButton = props => (
   <button class={props.className} type={props.type}>
-    {props.title}
+    {props.children}
   </button>
 );
 
 HoverableButton.propTypes = {
+  children: PropTypes.node,
   type: PropTypes.string.isRequired,
   onClick: PropTypes.func.isRequired,
   title: PropTypes.string,

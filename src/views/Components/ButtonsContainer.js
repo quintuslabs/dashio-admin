@@ -34,259 +34,279 @@ class ButtonsContainer extends Component {
               <div className="container-fluid">
                 <div className="row">
                   <Button
-                    type={"button"}
-                    title={"Button Primary"}
-                    className={"button button-primary button-sm"}
-                  />
+                    type="button"
+                    className="button button-primary button-sm"
+                  >
+                    Button Primary
+                  </Button>
 
                   <Button
-                    type={"button"}
-                    title={"Button Secondary"}
-                    className={"button button-secondary button-sm"}
-                  />
+                    type="button"
+                    className="button button-secondary button-sm"
+                  >
+                    Button Secondary
+                  </Button>
                   <Button
-                    type={"button"}
-                    title={"Button Success"}
-                    className={"button button-success button-sm"}
-                  />
+                    type="button"
+                    className="button button-success button-sm"
+                  >
+                    Button Success
+                  </Button>
                   <Button
-                    type={"button"}
-                    title={"Button Warning"}
-                    className={"button button-warning button-sm"}
-                  />
+                    type="button"
+                    className="button button-warning button-sm"
+                  >
+                    Button Warning
+                  </Button>
                   <Button
-                    type={"button"}
-                    title={"Button Danger"}
-                    className={"button button-danger button-sm"}
-                  />
+                    type="button"
+                    className="button button-danger button-sm"
+                  >
+                    Button Danger
+                  </Button>
                   <Button
-                    type={"button"}
-                    title={"Button Info"}
-                    className={"button button-info button-sm"}
-                  />
+                    type="button"
+                    className="button button-info button-sm"
+                  >
+                    Button Info
+                  </Button>
                   <Button
-                    type={"button"}
-                    title={"Button Light"}
-                    className={"button button-light button-sm"}
-                  />
+                    type="button"
+                    className="button button-light button-sm"
+                  >
+                    Button Light
+                  </Button>
                   <Button
-                    type={"button"}
-                    title={"Button Dark"}
-                    className={"button button-dark button-sm"}
-                  />
+                    type="button"
+                    className="button button-dark button-sm"
+                  >
+                    Button Dark
+                  </Button>
                   <Button
-                    type={"button"}
-                    title={"Button Link"}
-                    className={"button button-link button-sm"}
-                  />
+                    type="button"
+                    className="button button-link button-sm"
+                  >
+                    Button Link
+                  </Button>
                 </div>
 
                 <div className="row">
                   <Button
-                    type={"button"}
-                    title={"Button Primary"}
-                    className={"button button-outline-primary button-sm"}
-                  />
+                    type="button"
+                    className="button button-outline-primary button-sm"
+                  >
+                    Button Primary
+                  </Button>
 
                   <Button
-                    type={"button"}
-                    title={"Button Secondary"}
-                    className={"button button-outline-secondary button-sm"}
-                  />
+                    type="button"
+                    className="button button-outline-secondary button-sm"
+                  >
+                    Button Secondary
+                  </Button>
                   <Button
-                    type={"button"}
-                    title={"Button Success"}
-                    className={"button button-outline-success button-sm"}
-                  />
+                    type="button"
+                    className="button button-outline-success button-sm"
+                  >
+                    Button Success
+                  </Button>
                   <Button
-                    type={"button"}
-                    title={"Button Warning"}
-                    className={"button button-outline-warning button-sm"}
-                  />
+                    type="button"
+                    className="button button-outline-warning button-sm"
+                  >
+                    Button Warning
+                  </Button>
                   <Button
-                    type={"button"}
-                    title={"Button Danger"}
-                    className={"button button-outline-danger button-sm"}
-                  />
+                    type="button"
+                    className="button button-outline-danger button-sm"
+                  >
+                    Button Danger
+                  </Button>
                   <Button
-                    type={"button"}
-                    title={"Button Info"}
-                    className={"button button-outline-info button-sm"}
-                  />
+                    type="button"
+                    className="button button-outline-info button-sm"
+                  >
+                    Button Info
+                  </Button>
                   <Button
-                    type={"button"}
-                    title={"Button Light"}
-                    className={"button button-outline-light button-sm"}
-                  />
+                    type="button"
+                    className="button button-outline-light button-sm"
+                  >
+                    Button Light
+                  </Button>
                   <Button
-                    type={"button"}
-                    title={"Button Dark"}
-                    className={"button button-outline-dark button-sm"}
-                  />
+                    type="button"
+                    className="button button-outline-dark button-sm"
+                  >
+                    Button Dark
+                  </Button>
                   <Button
-                    type={"button"}
-                    title={"Button Link"}
-                    className={"button button-outline-link button-sm"}
-                  />
+                    type="button"
+                    className="button button-outline-link button-sm"
+                  >
+                    Button Link
+                  </Button>
                 </div>
 
                 <div className="row">
                   <Button
-                    type={"button"}
-                    title={"Button Primary"}
-                    className={
-                      "button button-outline-primary button-sm  button-circle"
-                    }
-                  />
+                    type="button"
+                    className="button button-outline-primary button-sm  button-circle"
+                  >
+                    Button Primary
+                  </Button>
 
                   <Button
-                    type={"button"}
-                    title={"Button Secondary"}
-                    className={
-                      "button button-outline-secondary button-sm  button-circle"
-                    }
-                  />
+                    type="button"
+                    className="button button-outline-secondary button-sm  button-circle"
+                  >
+                    Button Secondary
+                  </Button>
                   <Button
-                    type={"button"}
-                    title={"Button Success"}
-                    className={
-                      "button button-outline-success button-sm  button-circle"
-                    }
-                  />
+                    type="button"
+                    className="button button-outline-success button-sm  button-circle"
+                  >
+                    Button Success
+                  </Button>
                   <Button
-                    type={"button"}
-                    title={"Button Warning"}
-                    className={
-                      "button button-outline-warning button-sm  button-circle"
-                    }
-                  />
+                    type="button"
+                    className="button button-outline-warning button-sm  button-circle"
+                  >
+                    Button Warning
+                  </Button>
                   <Button
-                    type={"button"}
-                    title={"Button Danger"}
-                    className={
-                      "button button-outline-danger button-sm  button-circle"
-                    }
-                  />
+                    type="button"
+                    className="button button-outline-danger button-sm  button-circle"
+                  >
+                    Button Danger
+                  </Button>
                   <Button
-                    type={"button"}
-                    title={"Button Info"}
-                    className={
-                      "button button-outline-info button-sm  button-circle"
-                    }
-                  />
+                    type="button"
+                    className="button button-outline-info button-sm  button-circle"
+                  >
+                    Button Info
+                  </Button>
                   <Button
-                    type={"button"}
-                    title={"Button Light"}
+                    type="button"
                     className={
                       "button button-outline-light button-sm  button-circle"
                     }
-                  />
+                  >
+                    Button Light
+                  </Button>
                   <Button
-                    type={"button"}
-                    title={"Button Dark"}
-                    className={
-                      "button button-outline-dark button-sm  button-circle"
-                    }
-                  />
+                    type="button"
+                    className="button button-outline-dark button-sm  button-circle"
+                  >
+                    Button Dark
+                  </Button>
                   <Button
-                    type={"button"}
-                    title={"Button Link"}
-                    className={
-                      "button button-outline-link button-sm  button-circle"
-                    }
-                  />
+                    type="button"
+                    className="button button-outline-link button-sm  button-circle"
+                  >
+                    Button Link
+                  </Button>
                 </div>
                 <div className="row">
                   <Button
-                    type={"button"}
-                    title={"Button Primary"}
-                    className={"button button-primary button-sm  button-circle"}
-                  />
+                    type="button"
+                    className="button button-primary button-sm  button-circle"
+                  >
+                    Button Primary
+                  </Button>
 
                   <Button
-                    type={"button"}
-                    title={"Button Secondary"}
-                    className={
-                      "button button-secondary button-sm  button-circle"
-                    }
-                  />
+                    type="button"
+                    className="button button-secondary button-sm  button-circle"
+                  >
+                    Button Secondary
+                  </Button>
                   <Button
-                    type={"button"}
-                    title={"Button Success"}
-                    className={"button button-success button-sm  button-circle"}
-                  />
+                    type="button"
+                    className="button button-success button-sm  button-circle"
+                  >
+                    Button Success
+                  </Button>
                   <Button
-                    type={"button"}
-                    title={"Button Warning"}
-                    className={"button button-warning button-sm  button-circle"}
-                  />
+                    type="button"
+                    className="button button-warning button-sm  button-circle"
+                  >
+                    Button Warning
+                  </Button>
                   <Button
-                    type={"button"}
-                    title={"Button Danger"}
-                    className={"button button-danger button-sm  button-circle"}
-                  />
+                    type="button"
+                    className="button button-danger button-sm  button-circle"
+                  >
+                    Button Danger
+                  </Button>
                   <Button
-                    type={"button"}
-                    title={"Button Info"}
+                    type="button"
                     className={"button button-info button-sm  button-circle"}
-                  />
+                  >
+                    Button Info
+                  </Button>
                   <Button
-                    type={"button"}
-                    title={"Button Light"}
-                    className={"button button-light button-sm  button-circle"}
-                  />
+                    type="button"
+                    className="button button-light button-sm  button-circle"
+                  >
+                    Button Light
+                  </Button>
                   <Button
-                    type={"button"}
-                    title={"Button Dark"}
-                    className={"button button-dark button-sm  button-circle"}
-                  />
+                    type="button"
+                    className="button button-dark button-sm  button-circle"
+                  >
+                    Button Dark
+                  </Button>
                   <Button
-                    type={"button"}
-                    title={"Button Link"}
-                    className={"button button-link button-sm  button-circle"}
-                  />
+                    type="button"
+                    title=""
+                    className="button button-link button-sm  button-circle"
+                  >
+                    Button Link
+                  </Button>
                 </div>
                 <div className="row">
                   <Button
-                    type={"button"}
-                    title={"Button Primary"}
-                    icon={"fa fa-star"}
-                    className={"button button-primary button-sm"}
-                  />
+                    type="button"
+                    className="button button-primary button-sm"
+                  >
+                    <i className="fa fa-star"></i> Button Primary
+                  </Button>
 
                   <Button
-                    type={"button"}
-                    title={"Button Secondary"}
-                    icon={"fa fa-lightbulb-o"}
-                    className={"button button-secondary button-sm"}
-                  />
+                    type="button"
+                    className="button button-secondary button-sm"
+                  >
+                    <i className="fa fa-lightbulb-o"></i>Button Secondary
+                  </Button>
                   <Button
-                    type={"button"}
-                    title={"Button Success"}
-                    icon={"fa fa-magic"}
-                    className={"button button-success button-sm"}
-                  />
+                    type="button"
+                    className="button button-success button-sm"
+                  >
+                    <i className="fa fa-magic"></i> Button Success
+                  </Button>
                   <Button
-                    type={"button"}
-                    title={"Button Warning"}
-                    icon={"fa fa-rss"}
-                    className={"button button-warning button-sm"}
-                  />
+                    type="button"
+                    className="button button-warning button-sm"
+                  >
+                    {" "}
+                    <i className="fa fa-map-marker"></i>Button Warning
+                  </Button>
                   <Button
-                    type={"button"}
-                    title={"Button Danger"}
-                    icon={"fa fa-map-marker"}
-                    className={"button button-danger button-sm"}
-                  />
+                    type="button"
+                    className="button button-danger button-sm"
+                  >
+                    <i className="fa fa-map-marker"></i>Button Danger
+                  </Button>
                   <Button
-                    type={"button"}
-                    title={"Button Info"}
-                    icon={"fa fa-link"}
-                    className={"button button-info button-sm"}
-                  />
+                    type="button"
+                    className="button button-info button-sm"
+                  >
+                    Button Info
+                  </Button>
                 </div>
                 <div className="row">
-                  <HoverableButton />
+                  <HoverableButton>Hoverable Button</HoverableButton>
                 </div>
               </div>
             </div>

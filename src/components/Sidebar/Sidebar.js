@@ -103,14 +103,14 @@ function Sidebar(props) {
             </a>
           </li>
 
-          <li className={active === "/widgets" ? "active" : null}>
+          {/* <li className={active === "/widgets" ? "active" : null}>
             <a href="/widgets">
               <div className="menu-icon">
                 <i className="fa fa-th-large nav_icon" aria-hidden="true"></i>
               </div>
               <span className="menu-title">Widgets</span>
             </a>
-          </li>
+          </li> */}
 
           <li className={active === "/forms" ? "active" : null}>
             <a href="/forms">

@@ -4,15 +4,14 @@ import "./StyleSheets/Button.css";
 
 const Button = props => (
   <button type={props.type} className={props.className} onClick={props.onClick}>
-    <i className={props.icon}> </i>
-    {props.title}
+    {props.children}
   </button>
 );
 
 Button.propTypes = {
+  children: PropTypes.node,
   type: PropTypes.string.isRequired,
   onClick: PropTypes.func.isRequired,
-  title: PropTypes.string,
   icon: PropTypes.string,
   className: PropTypes.string
 };
@@ -20,7 +19,6 @@ Button.propTypes = {
 // Specifies the default values for props:
 Button.defaultProps = {
   type: "button",
-  title: "Button",
   className: "button button-primary button-lg"
 };
 
