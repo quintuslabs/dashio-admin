@@ -1,0 +1,142 @@
+.default {
+    --bg-color: #6b61ff;
+    --bg-color-light: #bfbaff;
+    --text-color-hover: #fdfdfd;
+    --box-shadow-color: rgba(113, 97, 255, 0.48);
+  }
+  
+.warning {
+    --bg-color: #ffd861;
+    --bg-color-light: #ffeeba;
+    --text-color-hover: #4c5656;
+    --box-shadow-color: rgba(255, 215, 97, 0.48);
+  }
+  
+  .success {
+    --bg-color: #b8f9d3;
+    --bg-color-light: #e2fced;
+    --text-color-hover: #4c5656;
+    --box-shadow-color: rgba(184, 249, 211, 0.48);
+  }
+  
+  .danger {
+    --bg-color: #ceb2fc;
+    --bg-color-light: #f0e7ff;
+    --text-color-hover: #fff;
+    --box-shadow-color: rgba(206, 178, 252, 0.48);
+  }
+  
+  .info {
+    --bg-color: #dce9ff;
+    --bg-color-light: #f1f7ff;
+    --text-color-hover: #4c5656;
+    --box-shadow-color: rgba(220, 233, 255, 0.48);
+  }
+  
+.service--card {
+    width: 220px;
+    height: 321px;
+    background: #fff;
+    border-top-right-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    box-shadow: 0 14px 26px rgba(0,0,0,0.04);
+    transition: all 0.3s ease-out;
+    text-decoration: none;
+  }
+  
+  .service--card:hover {
+    transform: translateY(-5px) scale(1.005) translateZ(0);
+    box-shadow: 0 24px 36px rgba(0,0,0,0.11),
+      0 24px 46px var(--box-shadow-color);
+  }
+  
+  .service--card:hover .overlay {
+    transform: scale(4) translateZ(0);
+  }
+  
+  .service--card:hover .circle {
+    border-color: var(--bg-color-light);
+    background: var(--bg-color);
+  }
+  
+  .service--card:hover .circle:after {
+    background: var(--bg-color-light);
+  }
+  
+  .service--card:hover p {
+    color: var(--text-color-hover);
+  }
+  
+  .service--card:active {
+    transform: scale(1) translateZ(0);
+    box-shadow: 0 15px 24px rgba(0,0,0,0.11),
+      0 15px 24px var(--box-shadow-color);
+  }
+  
+  .service--card p {
+    font-size: 17px;
+    color: #4C5656;
+    margin-top: 30px;
+    z-index: 1000;
+    transition: color 0.3s ease-out;
+  }
+  
+  .circle {
+    width: 131px;
+    height: 131px;
+    border-radius: 50%;
+    background: #fff;
+    border: 2px solid var(--bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    transition: all 0.3s ease-out;
+  }
+  
+  .circle:after {
+    content: "";
+    width: 118px;
+    height: 118px;
+    display: block;
+    position: absolute;
+    background: var(--bg-color);
+    border-radius: 50%;
+    top: 4px;
+    left: 4px;
+    bottom: 0;
+    right: 0;
+    transition: opacity 0.3s ease-out;
+  }
+  
+  .circle i {
+    z-index: 10000;
+    transform: translateZ(0);
+    color: white;
+  }
+  
+  .circle img {
+    z-index: 10000;
+    transform: translateZ(0);
+    max-width: 80px;
+    max-height: 80px;
+    border-radius: 50%;
+  }
+  
+  .overlay {
+    width: 118px;
+    position: absolute; 
+    height: 118px;
+    border-radius: 50%;
+    background: var(--bg-color);
+    top: 70px;
+    left: 50px;
+    z-index: 0;
+    transition: transform 0.3s ease-out;
+  }
