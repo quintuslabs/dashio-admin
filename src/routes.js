@@ -11,7 +11,7 @@ import Card from "./views/Components/CardsContainer";
 import Alert from "./views/Components/AlertContainer";
 import ProgressBar from "./views/Components/ProgressBarContainer";
 import UIElements from "./views/UIElements/UIElements";
-import Widgets from "./views/Widgets/Widgets";
+import Widgets from "./views/Widgets/WidgetsContainer";
 import Forms from "./views/Forms/Forms";
 import Tables from "./views/Tables/Tables";
 import Pages from "./views/Pages/Pages";
