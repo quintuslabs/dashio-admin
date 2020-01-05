@@ -1,5 +1,5 @@
 .transitional--card {
-    width: 280px;
+    max-width:  280px;
     height: 360px;
     border-radius: 15px;
     padding: 1.5rem;

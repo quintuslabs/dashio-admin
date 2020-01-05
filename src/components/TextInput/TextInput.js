@@ -1,18 +1,28 @@
 import React from "react";
 import PropTypes from "prop-types";
+import classNames from "classnames";
 import "./StyleSheets/TextInput.css";
 
 const TextInput = props => (
-  <div className={props.groupClassName}>
-    <label className={props.labelClassName}>{props.label} </label>
+  <div className={classNames("form-group", props.groupClassName)}>
+    <label
+      className={classNames("form-label", props.labelClassName, {
+        error: props.labelError
+      })}
+    >
+      {props.label}
+    </label>
     <input
-      className={props.className}
+      className={classNames("form-control", props.className, {
+        error: props.error
+      })}
       name={props.name}
       type={props.inputType}
       value={props.value}
       onChange={props.controlFunc}
       placeholder={props.placeholder}
     />
+    <p>{props.errorText}</p>
   </div>
 );
 
@@ -27,7 +37,10 @@ TextInput.propTypes = {
   placeholder: PropTypes.string,
   className: PropTypes.string,
   groupClassName: PropTypes.string,
-  labelClassName: PropTypes.string
+  labelClassName: PropTypes.string,
+  errorText: PropTypes.string,
+  error: PropTypes.bool,
+  labelError: PropTypes.bool
 };
 
 // Specifies the default values for props:
@@ -36,9 +49,8 @@ TextInput.defaultProps = {
   label: "Label",
   name: "text",
   placeholder: "Enter a Text",
-  className: "form-control",
-  groupClassName: "form-group",
-  labelClassName: "form-label"
+  labelError: false,
+  error: false
 };
 
 export default TextInput;

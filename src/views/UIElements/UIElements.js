@@ -31,39 +31,27 @@ class UIElements extends Component {
               <div className="line"></div>
               <div className="container-fluid">
                 <div className="row" style={{ marginBottom: 20 }}>
-                  <div className="col-sm-3 col-sm-3">
-                    <HoverableCard
-                      onClick={() => alert("Thank s for click ")}
-                    />
-                  </div>
-                  <div className="col-sm-3 col-sm-3 ">
-                    <HoverableCard
-                      title="Favourites"
-                      body="Check all your favourites in one place."
-                      icon={
-                        <i
-                          className="fa fa-heart-o fa-3x"
-                          aria-hidden="true"
-                        ></i>
-                      }
-                      onClick={() => alert("Hi I am Profile Card ")}
-                    />
-                  </div>
-                  <div className="col-sm-3 col-sm-3">
-                    <HoverableCard
-                      title="CONTACTS"
-                      body="Add or change your contacts and links"
-                      icon={
-                        <i
-                          className="fa fa-address-book fa-3x"
-                          aria-hidden="true"
-                        ></i>
-                      }
-                    />
-                  </div>
-                  <div className="col-sm-3 col-sm-3">
-                    <HoverableCard />
-                  </div>
+                  <HoverableCard onClick={() => alert("Thank s for click ")} />
+
+                  <HoverableCard
+                    title="Favourites"
+                    body="Check all your favourites in one place."
+                    icon={
+                      <i className="fa fa-heart-o fa-3x" aria-hidden="true"></i>
+                    }
+                    onClick={() => alert("Hi I am Profile Card ")}
+                  />
+
+                  <HoverableCard
+                    title="CONTACTS"
+                    body="Add or change your contacts and links"
+                    icon={
+                      <i
+                        className="fa fa-address-book fa-3x"
+                        aria-hidden="true"
+                      ></i>
+                    }
+                  />
                 </div>
                 <div className="row" style={{ marginBottom: 40 }}>
                   <div className="col-sm-3 col-sm-3">
