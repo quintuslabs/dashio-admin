@@ -1,9 +1,15 @@
 import React from "react";
 import PropTypes from "prop-types";
 import "./StyleSheets/Button.css";
+import classNames from "classnames";
 
 const Button = props => (
-  <button type={props.type} className={props.className} onClick={props.onClick}>
+  <button
+    type={props.type}
+    className={classNames("button--button", props.className)}
+    onClick={props.onClick}
+    style={props.style}
+  >
     {props.children}
   </button>
 );
@@ -19,7 +25,7 @@ Button.propTypes = {
 // Specifies the default values for props:
 Button.defaultProps = {
   type: "button",
-  className: "button button-primary button-lg"
+  className: "button-primary button-lg"
 };
 
 export default Button;

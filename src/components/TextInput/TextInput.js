@@ -14,32 +14,38 @@ const TextInput = props => (
     </label>
     <input
       className={classNames("form-control", props.className, {
-        error: props.error
+        "form--error": props.error
       })}
       name={props.name}
       type={props.inputType}
       value={props.value}
-      onChange={props.controlFunc}
+      onChange={props.onChange}
       placeholder={props.placeholder}
+      required={props.required}
+      maxLength={props.maxLength}
+      minLength={props.minLength}
+      disabled={props.disabled}
     />
-    <p>{props.errorText}</p>
+    {props.error ? <p className="error--message">{props.errorText}</p> : ""}
   </div>
 );
 
 TextInput.propTypes = {
   inputType: PropTypes.string.isRequired,
-  label: PropTypes.string.isRequired,
+  label: PropTypes.string,
   name: PropTypes.string.isRequired,
-  controlFunc: PropTypes.func.isRequired,
+  onChange: PropTypes.func.isRequired,
   value: PropTypes.string,
   required: PropTypes.bool,
+  maxLength: PropTypes.number,
+  minLength: PropTypes.number,
+  disabled: PropTypes.bool,
   error: PropTypes.bool,
   placeholder: PropTypes.string,
   className: PropTypes.string,
   groupClassName: PropTypes.string,
   labelClassName: PropTypes.string,
   errorText: PropTypes.string,
-  error: PropTypes.bool,
   labelError: PropTypes.bool
 };
 
@@ -48,7 +54,7 @@ TextInput.defaultProps = {
   inputType: "text",
   label: "Label",
   name: "text",
-  placeholder: "Enter a Text",
+  required: false,
   labelError: false,
   error: false
 };
