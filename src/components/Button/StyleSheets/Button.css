@@ -1,4 +1,5 @@
 .button--button{
+    border: none;
     display: inline-block;
     font-weight: 400;
     color: #212529;
@@ -73,40 +74,40 @@
 
 .button-outline-primary {
     color: #007bff;
-    border-color: #007bff;
+    border: 1px solid #007bff;
 }
 
 .button-outline-secondary {
     color: #6c757d;
-    border-color: #6c757d;
+    border: 1px solid #6c757d;
 }
 
 .button-outline-success {
     color: #28a745;
-    border-color: #28a745;
+    border: 1px solid #28a745;
 }
 
 .button-outline-warning {
     color: #ffc107;
-    border-color: #ffc107;
+    border: 1px solid #ffc107;
 }
 
 .button-outline-danger {
     color: #dc3545;
-    border-color: #dc3545;
+    border: 1px solid #dc3545;
 }
 
 .button-outline-info {
     color: #17a2b8;
-    border-color: #17a2b8;
+    border: 1px solid #17a2b8;
 }
 .button-outline-light {
     color: #f8f9fa;
-    border-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
 }
 .button-outline-dark {
     color: #343a40;
-    border-color: #343a40;
+    border: 1px solid #343a40;
 }
 
 .button-lg {

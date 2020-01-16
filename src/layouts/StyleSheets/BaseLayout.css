@@ -18,6 +18,7 @@
 
 div#content.active {
     margin-left: 0;
+    width: 100%;
 }
 .line {
     width: 100%;
