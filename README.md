@@ -5,7 +5,13 @@
 
 ### Screenshot
 
-![Dashio-Admin admin dashboard template preview](screen/screen1.png)
+![Dashio-Admin admin dashboard template preview](Screen/screen1.png)
+
+
+![Dashio-Admin admin dashboard template preview](Screen/screen2.png)
+
+
+![Dashio-Admin admin dashboard template preview](Screen/screen3.png)
 
 ### Demo Site: [Here](https://index.html)
 
