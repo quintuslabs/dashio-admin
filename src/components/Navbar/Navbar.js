@@ -32,7 +32,7 @@ class Navbar extends Component {
               className="collapse navbar-collapse"
               id="navbarSupportedContent"
             >
-              <ul className="nav navbar-nav ml-auto">
+              {/* <ul className="nav navbar-nav ml-auto">
                 <li className="nav-item active">
                   <a className="nav-link" href="/about">
                     Page
@@ -53,7 +53,7 @@ class Navbar extends Component {
                     Page
                   </a>
                 </li>
-              </ul>
+              </ul> */}
             </div>
           </div>
         </nav>
