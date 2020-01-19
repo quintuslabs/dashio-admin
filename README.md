@@ -1,3 +1,14 @@
+# Dashio-Admin React Admin Dashboard Template
+**Dashio-Admin** is a responsive Bootstrap 4 Admin Template. It provides you with a collection of ready to use code snippets and utilities, custom pages, loads of charts, dashboard variations, a collection of applications and some useful widgets. Preview of this awesome admin template available here: 
+
+# Preview
+
+### Screenshot
+
+![Dashio-Admin admin dashboard template preview](screen/screen1.png)
+
+### Demo Site: [Here](https://index.html)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
@@ -66,3 +77,16 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+
+
+### Changelog
+#### V 1.0.0
+Initial Release
+### Authors
+[Quintus Labs](https://quintuslabs.com)
+
+
+### License
+
+Dashio-Admin is licensed under The MIT License (MIT). Which means that you can use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the final products. But you always need to state that Colorlib is the original author of this template.

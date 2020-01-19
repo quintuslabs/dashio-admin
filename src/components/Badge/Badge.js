@@ -1,5 +1,10 @@
 import React, { Component } from "react";
 import classNames from "classnames";
+/*
+ **Author: Santosh Kumar Dash
+ **Author URL: http://santoshdash.epizy.com/
+ **Github URL: https://github.com/quintuslabs/dashio-admin
+ */
 
 import PropTypes from "prop-types";
 import "./StyleSheets/Badge.css";

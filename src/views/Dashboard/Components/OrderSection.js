@@ -1,3 +1,9 @@
+/*
+ **Author: Santosh Kumar Dash
+ **Author URL: http://santoshdash.epizy.com/
+ **Github URL: https://github.com/quintuslabs/dashio-admin
+ */
+
 import React, { Component } from "react";
 
 import PieChart from "./PieChart";
@@ -179,7 +185,7 @@ class OrderSection extends Component {
                 <div className="card br-0">
                   <div className="card-body">
                     <div className="chart-container ov-h">
-                   <PieChart/>
+                      <PieChart />
                     </div>
                   </div>
                 </div>

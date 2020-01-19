@@ -6,7 +6,10 @@
     "type": "git"
   },
   "keywords": ["reactjs", "admin", "admin panel", "react", "react-admin"],
+  "description": "Dashio-Admin React Open Source Bootstrap 4 Admin Template",
   "author": "Quintus Labs",
+  "copyright": "Copyright 2019 Quintus Labs ",
+  "license": "MIT",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.4.0",

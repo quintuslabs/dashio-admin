@@ -1,9 +1,14 @@
+/*
+ **Author: Santosh Kumar Dash
+ **Author URL: http://santoshdash.epizy.com/
+ **Github URL: https://github.com/quintuslabs/dashio-admin
+ */
+
 import React, { Component } from "react";
 import Chart from "../../../utils/Chart";
 import PropTypes from "prop-types";
 
 class AreaChart extends Component {
-
   constructor(props) {
     super(props);
     this.state = {};
@@ -84,20 +89,17 @@ class AreaChart extends Component {
   }
 
   render() {
-   
     return (
       <div>
-         <canvas
-            height="120"
-            ref={this.canvasRef}
-            style={{ maxWidth: "100% !important" }}
-          />
+        <canvas
+          height="120"
+          ref={this.canvasRef}
+          style={{ maxWidth: "100% !important" }}
+        />
       </div>
     );
   }
 }
-
-
 
 AreaChart.propTypes = {
   /**

@@ -1,3 +1,9 @@
+/*
+ **Author: Santosh Kumar Dash
+ **Author URL: http://santoshdash.epizy.com/
+ **Github URL: https://github.com/quintuslabs/dashio-admin
+ */
+
 import React, { Component } from "react";
 import Breadcrumb from "../../components/BreadCrumb/Breadcrumb";
 import { TextInput } from "../../components/TextInput";

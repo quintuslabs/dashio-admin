@@ -1,3 +1,9 @@
+/*
+ **Author: Santosh Kumar Dash
+ **Author URL: http://santoshdash.epizy.com/
+ **Github URL: https://github.com/quintuslabs/dashio-admin
+ */
+
 import React, { useState, useEffect } from "react";
 import { withRouter } from "react-router-dom";
 import "./StyleSheets/Sidebar.css";
