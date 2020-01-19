@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/dashio-admin/static/css/main.d6c26998.chunk.css",
+    "main.js": "/dashio-admin/static/js/main.1aaf714b.chunk.js",
+    "main.js.map": "/dashio-admin/static/js/main.1aaf714b.chunk.js.map",
+    "runtime-main.js": "/dashio-admin/static/js/runtime-main.4dae10ea.js",
+    "runtime-main.js.map": "/dashio-admin/static/js/runtime-main.4dae10ea.js.map",
+    "static/css/2.17e5ed98.chunk.css": "/dashio-admin/static/css/2.17e5ed98.chunk.css",
+    "static/js/2.d4575a76.chunk.js": "/dashio-admin/static/js/2.d4575a76.chunk.js",
+    "static/js/2.d4575a76.chunk.js.map": "/dashio-admin/static/js/2.d4575a76.chunk.js.map",
+    "index.html": "/dashio-admin/index.html",
+    "precache-manifest.acc9ead4b1ae608e368986199a9a1aad.js": "/dashio-admin/precache-manifest.acc9ead4b1ae608e368986199a9a1aad.js",
+    "service-worker.js": "/dashio-admin/service-worker.js",
+    "static/css/2.17e5ed98.chunk.css.map": "/dashio-admin/static/css/2.17e5ed98.chunk.css.map",
+    "static/css/main.d6c26998.chunk.css.map": "/dashio-admin/static/css/main.d6c26998.chunk.css.map",
+    "static/js/2.d4575a76.chunk.js.LICENSE": "/dashio-admin/static/js/2.d4575a76.chunk.js.LICENSE",
+    "static/media/0.jpg": "/dashio-admin/static/media/0.73476783.jpg",
+    "static/media/1.jpeg": "/dashio-admin/static/media/1.ed986061.jpeg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4dae10ea.js",
+    "static/css/2.17e5ed98.chunk.css",
+    "static/js/2.d4575a76.chunk.js",
+    "static/css/main.d6c26998.chunk.css",
+    "static/js/main.1aaf714b.chunk.js"
+  ]
+}
