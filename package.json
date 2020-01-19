@@ -2,10 +2,21 @@
   "name": "dashio",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://quintuslabs.github.io/dashio-admin",
   "repository": {
     "type": "git"
   },
-  "keywords": ["reactjs", "admin", "admin panel", "react", "react-admin"],
+  "keywords": [
+    "dashboard",
+    "react-dashboard",
+    "dashio-admin",
+    "dashio",
+    "reactjs",
+    "admin",
+    "admin panel",
+    "react",
+    "react-admin"
+  ],
   "description": "Dashio-Admin React Open Source Bootstrap 4 Admin Template",
   "author": "Quintus Labs",
   "copyright": "Copyright 2019 Quintus Labs ",
@@ -32,6 +43,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -48,5 +61,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^2.2.0"
   }
 }
