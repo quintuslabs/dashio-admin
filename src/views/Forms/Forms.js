@@ -8,6 +8,10 @@ import React, { Component } from "react";
 import Breadcrumb from "../../components/BreadCrumb/Breadcrumb";
 import { TextInput } from "../../components/TextInput";
 import { Button } from "../../components/Button";
+import { Form } from "react-bootstrap";
+import Validate from "../../utils/Validator";
+import { NAME_RULE, PHONE_RULE, EMAIL_RULE } from "../../utils/rule";
+
 class Forms extends Component {
   constructor(props) {
     super(props);
@@ -16,7 +20,17 @@ class Forms extends Component {
       ccName: "",
       ccNumber: "",
       ccExpiration: "",
-      code: ""
+      code: "",
+      first_name: "",
+      last_name: "",
+      email: "",
+      mobile: "",
+      password: "",
+
+      nameError: false,
+      emailError: false,
+      mobileError: false,
+      passwordError: false
     };
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -30,6 +44,15 @@ class Forms extends Component {
   handleSubmit(e) {
     e.preventDefault();
   }
+
+  submitFormHandler = event => {
+    event.preventDefault();
+
+    this.setState({
+      nameError: !Validate(this.state.first_name, NAME_RULE)
+    });
+  };
+
   render() {
     const path = [
       {
@@ -199,6 +222,57 @@ class Forms extends Component {
                       </form>
                     </div>
                   </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="row">
+            <div className="col-sm-6">
+              <div class="card">
+                <div class="card-header">
+                  <strong class="card-title">Register</strong>
+                </div>
+                <div class="card-body">
+                  <Form onSubmit={this.submitFormHandler}>
+                    <TextInput
+                      name="first_name"
+                      value={this.state.first_name}
+                      label="First Name"
+                      onChange={this.handleChange}
+                      error={this.state.nameError}
+                      errorText="please Enter Valid Name"
+                    />
+
+                    <TextInput
+                      name="last_name"
+                      value={this.state.last_name}
+                      label="Last Name"
+                      onChange={this.handleChange}
+                    />
+                    <TextInput
+                      name="email"
+                      inputType="email"
+                      value={this.state.email}
+                      label="Email Address"
+                      onChange={this.handleChange}
+                    />
+                    <TextInput
+                      name="mobile"
+                      value={this.state.mobile}
+                      label="Mobile Number"
+                      onChange={this.handleChange}
+                    />
+
+                    <TextInput
+                      name="password"
+                      inputType="password"
+                      value={this.state.password}
+                      label="Password"
+                      onChange={this.handleChange}
+                    />
+
+                    <Button type="submit">Register</Button>
+                  </Form>
                 </div>
               </div>
             </div>

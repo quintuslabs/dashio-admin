@@ -2,7 +2,7 @@
   "name": "dashio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://quintuslabs.github.io/dashio-admin",
+  "homepage": "http://quintuslabs.github.io/dashio-admin/",
   "repository": {
     "type": "git"
   },
