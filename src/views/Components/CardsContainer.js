@@ -13,11 +13,10 @@ import {
   ImageHeader,
   CardBody
 } from "../../components/Card";
-import image1 from "../../assets/images/content-management/1.jpeg";
 import user1 from "../../assets/images/avatars/0.jpg";
 import user2 from "../../assets/images/avatars/1.jpg";
 import user3 from "../../assets/images/avatars/2.jpg";
-import user4 from "../../assets/images/avatars/3.jpg";
+
 class CardsContainer extends Component {
   constructor(props) {
     super(props);

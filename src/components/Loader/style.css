@@ -1,0 +1,643 @@
+
+
+.sp {
+  width: 32px;
+  height: 32px;
+  clear: both;
+  margin: 20px auto;
+}
+
+/* Spinner Circle Rotation */
+.sp-circle {
+  border: 4px rgba(0, 0, 0, 0.25) solid;
+  border-top: 4px black solid;
+  border-radius: 50%;
+  -webkit-animation: spCircRot .6s infinite linear;
+  animation: spCircRot .6s infinite linear;
+}
+
+@-webkit-keyframes spCircRot {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(359deg);
+  }
+}
+@keyframes spCircRot {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+/* Spinner 3Balls Scale */
+.sp-3balls, .sp-3balls:before, .sp-3balls:after {
+  border-radius: 50%;
+  background-color: #000;
+  width: 18px;
+  height: 18px;
+  transform-origin: center center;
+  display: inline-block;
+}
+
+.sp-3balls {
+  position: relative;
+  background-color: black;
+  opacity: 1;
+  -webkit-animation: spScaleAlpha 1s infinite linear;
+  animation: spScaleAlpha 1s infinite linear;
+}
+
+.sp-3balls:before, .sp-3balls:after {
+  content: '';
+  position: relative;
+  opacity: 0.25;
+}
+
+.sp-3balls:before {
+  left: 30px;
+  top: 0px;
+  -webkit-animation: spScaleAlphaBefore 1s infinite linear;
+  animation: spScaleAlphaBefore 1s infinite linear;
+}
+
+.sp-3balls:after {
+  left: -30px;
+  top: -23px;
+  -webkit-animation: spScaleAlphaAfter 1s infinite linear;
+  animation: spScaleAlphaAfter 1s infinite linear;
+}
+
+@-webkit-keyframes spScaleAlpha {
+  0% {
+    opacity: 1;
+  }
+  33% {
+    opacity: 0.25;
+  }
+  66% {
+    opacity: 0.25;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes spScaleAlpha {
+  0% {
+    opacity: 1;
+  }
+  33% {
+    opacity: 0.25;
+  }
+  66% {
+    opacity: 0.25;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes spScaleAlphaBefore {
+  0% {
+    opacity: 0.25;
+  }
+  33% {
+    opacity: 1;
+  }
+  66% {
+    opacity: 0.25;
+  }
+}
+@keyframes spScaleAlphaBefore {
+  0% {
+    opacity: 0.25;
+  }
+  33% {
+    opacity: 1;
+  }
+  66% {
+    opacity: 0.25;
+  }
+}
+@-webkit-keyframes spScaleAlphaAfter {
+  33% {
+    opacity: 0.25;
+  }
+  66% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.25;
+  }
+}
+@keyframes spScaleAlphaAfter {
+  33% {
+    opacity: 0.25;
+  }
+  66% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.25;
+  }
+}
+/* Spinner VolumeButton */
+.sp-volume {
+  background-color: #000;
+  border-radius: 50%;
+  position: relative;
+  -webkit-animation: spVolRot .6s infinite linear;
+  animation: spVolRot .6s infinite linear;
+}
+
+.sp-volume:after {
+  content: '';
+  border-radius: 50%;
+  position: absolute;
+  display: block;
+  width: 10px;
+  height: 10px;
+  left: 5px;
+  top: 5px;
+  background-color: white;
+}
+
+@-webkit-keyframes spVolRot {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(359deg);
+  }
+}
+@keyframes spVolRot {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+/* Spinner Vortex */
+.sp-vortex {
+  border: 1px #000 solid;
+  border-radius: 4px;
+  overflow: hidden;
+  position: relative;
+}
+
+.sp-vortex:after, .sp-vortex:before {
+  content: '';
+  border-radius: 50%;
+  position: absolute;
+  width: inherit;
+  height: inherit;
+  -webkit-animation: spVortex 2s infinite linear;
+  animation: spVortex 2s infinite linear;
+}
+
+.sp-vortex:before {
+  border-top: 6px #000 solid;
+  top: -3px;
+  left: calc( -50% - 3px );
+  transform-origin: right center;
+}
+
+.sp-vortex:after {
+  border-bottom: 6px #000 solid;
+  top: 3px;
+  right: calc( -50% - 3px );
+  transform-origin: left center;
+}
+
+@-webkit-keyframes spVortex {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(359deg);
+  }
+}
+@keyframes spVortex {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+/* Spinner Slices */
+.sp.sp-slices {
+  border-radius: 50%;
+  border-top: 16px rgba(0, 0, 0, 0.75) solid;
+  border-left: 16px rgba(0, 0, 0, 0.25) solid;
+  border-bottom: 16px rgba(0, 0, 0, 0.25) solid;
+  border-right: 16px rgba(0, 0, 0, 0.25) solid;
+  -webkit-animation: spSlices 1s infinite linear;
+  animation: spSlices 1s infinite linear;
+}
+
+@-webkit-keyframes spSlices {
+  0% {
+    border-top: 16px rgba(0, 0, 0, 0.75) solid;
+    border-right: 16px rgba(0, 0, 0, 0.25) solid;
+    border-bottom: 16px rgba(0, 0, 0, 0.25) solid;
+    border-left: 16px rgba(0, 0, 0, 0.25) solid;
+  }
+  25% {
+    border-top: 16px rgba(0, 0, 0, 0.25) solid;
+    border-right: 16px rgba(0, 0, 0, 0.75) solid;
+    border-bottom: 16px rgba(0, 0, 0, 0.25) solid;
+    border-left: 16px rgba(0, 0, 0, 0.25) solid;
+  }
+  50% {
+    border-top: 16px rgba(0, 0, 0, 0.25) solid;
+    border-right: 16px rgba(0, 0, 0, 0.25) solid;
+    border-bottom: 16px rgba(0, 0, 0, 0.75) solid;
+    border-left: 16px rgba(0, 0, 0, 0.25) solid;
+  }
+  75% {
+    border-top: 16px rgba(0, 0, 0, 0.25) solid;
+    border-right: 16px rgba(0, 0, 0, 0.25) solid;
+    border-bottom: 16px rgba(0, 0, 0, 0.25) solid;
+    border-left: 16px rgba(0, 0, 0, 0.75) solid;
+  }
+  100% {
+    border-top: 16px rgba(0, 0, 0, 0.75) solid;
+    border-right: 16px rgba(0, 0, 0, 0.25) solid;
+    border-bottom: 16px rgba(0, 0, 0, 0.25) solid;
+    border-left: 16px rgba(0, 0, 0, 0.25) solid;
+  }
+}
+@keyframes spSlices {
+  0% {
+    border-top: 16px rgba(0, 0, 0, 0.75) solid;
+    border-right: 16px rgba(0, 0, 0, 0.25) solid;
+    border-bottom: 16px rgba(0, 0, 0, 0.25) solid;
+    border-left: 16px rgba(0, 0, 0, 0.25) solid;
+  }
+  25% {
+    border-top: 16px rgba(0, 0, 0, 0.25) solid;
+    border-right: 16px rgba(0, 0, 0, 0.75) solid;
+    border-bottom: 16px rgba(0, 0, 0, 0.25) solid;
+    border-left: 16px rgba(0, 0, 0, 0.25) solid;
+  }
+  50% {
+    border-top: 16px rgba(0, 0, 0, 0.25) solid;
+    border-right: 16px rgba(0, 0, 0, 0.25) solid;
+    border-bottom: 16px rgba(0, 0, 0, 0.75) solid;
+    border-left: 16px rgba(0, 0, 0, 0.25) solid;
+  }
+  75% {
+    border-top: 16px rgba(0, 0, 0, 0.25) solid;
+    border-right: 16px rgba(0, 0, 0, 0.25) solid;
+    border-bottom: 16px rgba(0, 0, 0, 0.25) solid;
+    border-left: 16px rgba(0, 0, 0, 0.75) solid;
+  }
+  100% {
+    border-top: 16px rgba(0, 0, 0, 0.75) solid;
+    border-right: 16px rgba(0, 0, 0, 0.25) solid;
+    border-bottom: 16px rgba(0, 0, 0, 0.25) solid;
+    border-left: 16px rgba(0, 0, 0, 0.25) solid;
+  }
+}
+/* Spinner Sphere */
+.sp-sphere {
+  border-radius: 50%;
+  border-left: 0px #000 solid;
+  border-right: 0px #000 solid;
+  -webkit-animation: spSphere 1s infinite linear;
+  animation: spSphere 1s infinite linear;
+}
+
+@-webkit-keyframes spSphere {
+  0% {
+    border-left: 0px #000 solid;
+    border-right: 0px #000 solid;
+  }
+  33% {
+    border-left: 32px #000 solid;
+    border-right: 0px #000 solid;
+  }
+  34% {
+    border-left: 0px #000 solid;
+    border-right: 32px #000 solid;
+  }
+  66% {
+    border-left: 0px #000 solid;
+    border-right: 0px #000 solid;
+  }
+}
+@keyframes spSphere {
+  0% {
+    border-left: 0px #000 solid;
+    border-right: 0px #000 solid;
+  }
+  33% {
+    border-left: 32px #000 solid;
+    border-right: 0px #000 solid;
+  }
+  34% {
+    border-left: 0px #000 solid;
+    border-right: 32px #000 solid;
+  }
+  66% {
+    border-left: 0px #000 solid;
+    border-right: 0px #000 solid;
+  }
+}
+/* Spinner Bars */
+.sp-bars {
+  position: relative;
+  width: 10px;
+  border: 1px #000 solid;
+  background-color: rgba(0, 0, 0, 0.25);
+  -webkit-animation: spBars 1s infinite linear;
+  animation: spBars 1s infinite linear;
+}
+
+.sp-bars:after, .sp-bars:before {
+  content: '';
+  position: absolute;
+  width: inherit;
+  height: inherit;
+  border: inherit;
+  background-color: inherit;
+  top: -1px;
+}
+
+.sp-bars:before {
+  left: -20px;
+  -webkit-animation: spBarsBefore 1s infinite linear;
+  animation: spBarsBefore 1s infinite linear;
+}
+
+.sp-bars:after {
+  right: -20px;
+  -webkit-animation: spBarsAfter 1s infinite linear;
+  animation: spBarsAfter 1s infinite linear;
+}
+
+@keyframes spBarsBefore {
+  0% {
+    transform: scale(1, 1);
+  }
+  25% {
+    transform: scale(1, 1.25);
+  }
+  50% {
+    transform: scale(1, 0.75);
+  }
+  75% {
+    transform: scale(1, 1);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+@keyframes spBars {
+  0% {
+    transform: scale(1, 1);
+  }
+  25% {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(1, 1.25);
+  }
+  75% {
+    transform: scale(1, 1);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+@keyframes spBarsAfter {
+  0% {
+    transform: scale(1, 1);
+  }
+  25% {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(1, 0.75);
+  }
+  75% {
+    transform: scale(1, 1.25);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+/* Spinner Clock */
+.sp-clock {
+  border: 1px #000 solid;
+  border-radius: 50%;
+  position: relative;
+}
+
+.sp-clock:before {
+  content: '';
+  border-left: 1px #000 solid;
+  position: absolute;
+  top: 2px;
+  width: 1px;
+  height: calc( 50% - 2px );
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -ms-transform-origin: 0% 100%;
+  -webkit-transform-origin: 0% 100%;
+  transform-origin: 0% 100%;
+  -webkit-animation: spClock 1s infinite linear;
+  animation: spClock 1s infinite linear;
+}
+
+@-webkit-keyframes spClock {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(359deg);
+  }
+}
+@keyframes spClock {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+/* Spinner Wave */
+.sp-wave {
+  border-radius: 50%;
+  position: relative;
+  opacity: 1;
+}
+
+.sp-wave:before, .sp-wave:after {
+  content: '';
+  border: 1px #000 solid;
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0px;
+}
+
+.sp-wave:before {
+  transform: scale(1, 1);
+  opacity: 1;
+  -webkit-animation: spWaveBe 0.6s infinite linear;
+  animation: spWaveBe 0.6s infinite linear;
+}
+
+.sp-wave:after {
+  transform: scale(0, 0);
+  opacity: 0;
+  -webkit-animation: spWaveAf 0.6s infinite linear;
+  animation: spWaveAf 0.6s infinite linear;
+}
+
+@-webkit-keyframes spWaveAf {
+  from {
+    -webkit-transform: scale(0.5, 0.5);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: scale(1, 1);
+    opacity: 1;
+  }
+}
+@keyframes spWaveAf {
+  from {
+    transform: scale(0.5, 0.5);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1, 1);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes spWaveBe {
+  from {
+    -webkit-transform: scale(1, 1);
+    opacity: 1;
+  }
+  to {
+    -webkit-transform: scale(1.5, 1.5);
+    opacity: 0;
+  }
+}
+@keyframes spWaveBe {
+  from {
+    -webkit-transform: scale(1, 1);
+    opacity: 1;
+  }
+  to {
+    -webkit-transform: scale(1.5, 1.5);
+    opacity: 0;
+  }
+}
+/* Spinner Texture */
+.sp-texture {
+  border: 1px #000 solid;
+  border-radius: 4px;
+  position: relative;
+  background: linear-gradient(45deg, transparent 49%, #000 50%, #000 50%, transparent 51%, transparent), linear-gradient(-45deg, transparent 49%, #000 50%, #000 50%, transparent 51%, transparent);
+  background-size: 16px 16px;
+  background-position: 0% 0%;
+  -webkit-animation: spTexture 1s infinite linear;
+  animation: spTexture 1s infinite linear;
+}
+
+@-webkit-keyframes spTexture {
+  from {
+    background-position: 0px 0px;
+  }
+  to {
+    background-position: -16px 0px;
+  }
+}
+@keyframes spTexture {
+  from {
+    background-position: 0px 0px;
+  }
+  to {
+    background-position: -16px 0px;
+  }
+}
+/* Spinner LoadBar */
+.sp-loadbar {
+  width: 50px;
+  height: 18px;
+  border: 1px #000 solid;
+  border-radius: 4px;
+  background: linear-gradient(-60deg, transparent 0%, transparent 50%, #000 50%, #000 75%, transparent 75%, transparent);
+  background-size: 20px 30px;
+  background-position: 0px 0px;
+  -webkit-animation: spLoadBar 0.8s infinite linear;
+  animation: spLoadBar 0.8s infinite linear;
+}
+
+@-webkit-keyframes spLoadBar {
+  from {
+    background-position: 0px 0px;
+  }
+  to {
+    background-position: -20px 0px;
+  }
+}
+@keyframes spLoadBar {
+  from {
+    background-position: 0px 0px;
+  }
+  to {
+    background-position: -20px 0px;
+  }
+}
+/* Spinner Hydrogen */
+.sp-hydrogen {
+  position: relative;
+  border: 1px #000 solid;
+  border-radius: 50%;
+  -webkit-animation: spHydro 0.6s infinite linear;
+  animation: spHydro 0.6s infinite linear;
+}
+
+.sp-hydrogen:before, .sp-hydrogen:after {
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: #000;
+  border-radius: 50%;
+}
+
+.sp-hydrogen:before {
+  top: calc( 50% - 5px );
+  left: calc( 50% - 5px );
+}
+
+.sp-hydrogen:after {
+  top: -1px;
+  left: -1px;
+}
+
+@-webkit-keyframes spHydro {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(359deg);
+  }
+}
+@keyframes spHydro {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}

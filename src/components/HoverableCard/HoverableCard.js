@@ -4,7 +4,7 @@
  **Github URL: https://github.com/quintuslabs/dashio-admin
  */
 
-import React, { Component } from "react";
+import React from "react";
 import "./StyleSheets/HoverableCard.css";
 import PropTypes from "prop-types";
 import classNames from "classnames";

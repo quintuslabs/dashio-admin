@@ -22,7 +22,7 @@ class Navbar extends Component {
             <div onClick={() => this.props.onToggleClick()}>
               <i className="fa fa-bars" aria-hidden="true"></i>
             </div>
-            <button
+            {/* <button
               className="btn btn-dark d-inline-block d-lg-none ml-auto"
               type="button"
               data-toggle="collapse"
@@ -32,7 +32,7 @@ class Navbar extends Component {
               aria-label="Toggle navigation"
             >
               <i className="fa fa-align-justify"></i>
-            </button>
+            </button> */}
 
             <div
               className="collapse navbar-collapse"

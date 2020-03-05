@@ -6,8 +6,6 @@
 
 import React, { Component } from "react";
 import Breadcrumb from "../../components/BreadCrumb/Breadcrumb";
-import { TextInput } from "../../components/TextInput";
-import { Button } from "../../components/Button";
 import { Card } from "../../components/Card";
 
 import {

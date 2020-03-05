@@ -6,13 +6,35 @@
 
 import React, { Component } from "react";
 import { Button, HoverableButton } from "../../components/Button";
+import { LoadingButton } from "../../components/LoadingButton";
 import Breadcrumb from "../../components/BreadCrumb/Breadcrumb";
 
 class ButtonsContainer extends Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = {
+      status1: null,
+      status2: null
+    };
   }
+
+  onHandleClicked = () => {
+    console.log("clicked");
+    this.setState({ status1: "loading" });
+
+    const interval = setInterval(() => {
+      this.setState({ status1: "success" });
+    }, 3000);
+  };
+  onHandleErrorClicked = () => {
+    console.log("clicked");
+    this.setState({ status2: "loading" });
+
+    const interval = setInterval(() => {
+      this.setState({ status2: "error" });
+    }, 3000);
+  };
+
   render() {
     const path = [
       {
@@ -311,6 +333,23 @@ class ButtonsContainer extends Component {
                     Button Info
                   </Button>
                 </div>
+                <div className="row">
+                  <LoadingButton
+                    status={this.state.status1}
+                    onClick={this.onHandleClicked}
+                    className="btn-primary"
+                  >
+                    Click Me
+                  </LoadingButton>
+                  <LoadingButton
+                    status={this.state.status2}
+                    onClick={this.onHandleErrorClicked}
+                    className="btn-secondary"
+                  >
+                    <i className="fa fa-map-marker"></i> Click Me
+                  </LoadingButton>
+                </div>
+
                 <div className="row">
                   <HoverableButton>Hoverable Button</HoverableButton>
                 </div>

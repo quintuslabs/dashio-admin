@@ -92,9 +92,18 @@ function Sidebar(props) {
               >
                 <a href="/components/progressbar">
                   <div className="menu-icon">
-                    <i className="fa fa-spinner"></i>
+                    <i className="fa fa-tasks"></i>
                   </div>
                   <span className="menu-title">Progress Bars</span>
+                </a>
+              </li>
+
+              <li className={active === "/components/loader" ? "active" : null}>
+                <a href="/components/loader">
+                  <div className="menu-icon">
+                    <i className="fa fa-spinner"></i>
+                  </div>
+                  <span className="menu-title">Loader</span>
                 </a>
               </li>
             </ul>

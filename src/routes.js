@@ -10,6 +10,7 @@ import Badge from "./views/Components/BadgeContainer";
 import Card from "./views/Components/CardsContainer";
 import Alert from "./views/Components/AlertContainer";
 import ProgressBar from "./views/Components/ProgressBarContainer";
+import Loader from "./views/Components/LoaderContainer";
 import UIElements from "./views/UIElements/UIElements";
 import Widgets from "./views/Widgets/WidgetsContainer";
 import Forms from "./views/Forms/Forms";
@@ -56,6 +57,11 @@ var routes = [
     path: "/components/progressbar",
     layout: BaseLayout,
     component: ProgressBar
+  },
+  {
+    path: "/components/loader",
+    layout: BaseLayout,
+    component: Loader
   },
 
   {

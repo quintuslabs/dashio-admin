@@ -6,7 +6,6 @@
 
 import React, { Component } from "react";
 import { Badge } from "../../components/Badge";
-import { Button } from "../../components/Button";
 import { Breadcrumb } from "../../components/BreadCrumb";
 
 class BadgeContainer extends Component {

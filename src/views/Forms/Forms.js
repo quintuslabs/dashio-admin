@@ -10,7 +10,7 @@ import { TextInput } from "../../components/TextInput";
 import { Button } from "../../components/Button";
 import { Form } from "react-bootstrap";
 import Validate from "../../utils/Validator";
-import { NAME_RULE, PHONE_RULE, EMAIL_RULE } from "../../utils/rule";
+import { NAME_RULE } from "../../utils/rule";
 
 class Forms extends Component {
   constructor(props) {

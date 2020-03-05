@@ -1,26 +1,181 @@
-/*
-**Author: Santosh Kumar Dash
-**Author URL: http://santoshdash.epizy.com/
-**Github URL: https://github.com/quintuslabs/dashio-admin
-*/
+/* general */
+.buttonContainer {
+  text-align: center;
+  width: auto;
+  margin: 30px;
+}
+/* PARAMETERS */
+/* KEYFRAMES */
+.dsButtonAnim {
+  text-align: center;
+  display: inline-block;
+  text-transform: uppercase;
+  color: #fff;
+  line-height: 3rem;
+  background: #3dcb5f;
+  border-radius: 4rem;
+  cursor: pointer;
+  -webkit-transition: all 0.4s cubic-bezier(0.9, 0.1, 0.1, 0.9);
+  transition: all 0.4s cubic-bezier(0.9, 0.1, 0.1, 0.9);
+  width: auto;
+  text-align: center;
+    font-size: 12px;
+    line-height: 1.428571429;
+    border-radius: 30px;
+    padding: 10px;
+}
+.dsButtonAnim span {
+  opacity: 1;
+  -webkit-transition: 0.2s 0.4s ease;
+  transition: 0.2s 0.4s ease;
+}
+.dsButtonAnim.loading {
+  pointer-events: none;
+  cursor: wait;
+  background: #fb0;
+  width: 3rem;
+  height: 3rem;
+  padding: 0rem;
+  -webkit-transition: all 0.4s 0.2s cubic-bezier(0.9, 0.1, 0.1, 0.9);
+  transition: all 0.4s 0.2s cubic-bezier(0.9, 0.1, 0.1, 0.9);
+  -webkit-animation: loadingAnimation 2s 0.48s infinite;
+          animation: loadingAnimation 2s 0.48s infinite;
+}
+.dsButtonAnim.loading span {
+  opacity: 0;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+}
+.dsButtonAnim.success {
+  position: relative;
+  background: #3dcb5f;
+  width: 3rem;
+  height: 3rem;
+  -webkit-animation: none;
+          animation: none;
+  -webkit-transition: all 0.4s cubic-bezier(0.9, 0.1, 0.1, 0.9);
+  transition: all 0.4s cubic-bezier(0.9, 0.1, 0.1, 0.9);
+}
+.dsButtonAnim.success span {
+  opacity: 0;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+}
+.dsButtonAnim.success::before,
+.dsButtonAnim.success::after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  height: 4px;
+  background: #fff;
+  -webkit-transform-origin: 0% 50%;
+          transform-origin: 0% 50%;
+  z-index: 10;
+  -webkit-animation: showPseudos 0.4s 0.2s cubic-bezier(0.9, 0.1, 0.1, 0.9) forwards;
+          animation: showPseudos 0.4s 0.2s cubic-bezier(0.9, 0.1, 0.1, 0.9) forwards;
+  opacity: 0;
+  left: 48%;
+  bottom: 0.8rem;
+}
+.dsButtonAnim.success::before {
+  width: 14px;
+  -webkit-transform: rotate(-135deg);
+          transform: rotate(-135deg);
+}
+.dsButtonAnim.success::after {
+  margin-left: -3px;
+  width: 24px;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+.dsButtonAnim.error {
+  position: relative;
+  background: #da3b3b;
+  width: 3rem;
+  height: 3rem;
+  -webkit-animation: none;
+          animation: none;
+  -webkit-transition: all 0.4s cubic-bezier(0.9, 0.1, 0.1, 0.9);
+  transition: all 0.4s cubic-bezier(0.9, 0.1, 0.1, 0.9);
+}
+.dsButtonAnim.error span {
+  opacity: 0;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+}
+.dsButtonAnim.error::before,
+.dsButtonAnim.error::after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  height: 4px;
+  width: -5rem;
+  left: 50%;
+  margin-left: -2.5rem;
+  background: #fff;
+  -webkit-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+  z-index: 10;
+  -webkit-animation: showPseudos 0.4s 0.2s cubic-bezier(0.9, 0.1, 0.1, 0.9) forwards;
+          animation: showPseudos 0.4s 0.2s cubic-bezier(0.9, 0.1, 0.1, 0.9) forwards;
+  opacity: 0;
+  top: 50%;
+  margin-top: -2px;
+}
+.dsButtonAnim.error::before {
+  -webkit-transform: rotate(-135deg);
+          transform: rotate(-135deg);
+}
+.dsButtonAnim.error::after {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+@-webkit-keyframes loadingAnimation {
+  0% {
+    box-shadow: 0px 0px 0px 0px #fb0;
+  }
+  100% {
+    box-shadow: 0px 0px 0px 1rem rgba(255,187,0,0);
+  }
+}
+@keyframes loadingAnimation {
+  0% {
+    box-shadow: 0px 0px 0px 0px #fb0;
+  }
+  100% {
+    box-shadow: 0px 0px 0px 1rem rgba(255,187,0,0);
+  }
+}
+@-webkit-keyframes showPseudos {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes showPseudos {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 
-.loader {
-    border: 5px solid #c3c3c3; /* Light grey */
-    border-top: 5px solid #3498db; /* Blue */
-    border-radius: 50%;
-    width: 30px;
-    height: 30px;
-    animation: spin 2s linear infinite;
-  }
-  
-  @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-  }
 
-  .loading-btn-container{
-     width: 100%;
-     display: flex;
-     justify-content: center;
-     margin-top: 10px;
-  }
+
+/* .dsButtonAnim.button-primary {
+  background-color: #007bff !important;
+}
+
+.dsButtonAnim.button-secondary  {
+  background-color: #6c757d !important;
+}
+
+.dsButtonAnim.error.button-secondary {
+  background: #da3b3b !important;
+}
+.dsButtonAnim.success.button-primary {
+  background: #28a745 !important;
+} */

@@ -18,6 +18,12 @@ const validate = (value, rules) => {
       case "isEmail":
         isValid = isValid && emailValidator(value);
         break;
+      case "isPhone":
+        isValid = isValid && mobileValidator(value);
+        break;
+      case "isDate":
+        isValid = isValid && dateValidator(value);
+        break;
 
       default:
         isValid = true;
@@ -44,7 +50,7 @@ const minLengthValidator = (value, minLength) => {
  * @return
  */
 const maxLengthValidator = (value, maxLength) => {
-  return value.length == maxLength;
+  return value.length === maxLength;
 };
 
 /**
