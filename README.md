@@ -1,5 +1,5 @@
 # Dashio-Admin React Admin Dashboard Template
-**Dashio-Admin** is a responsive Bootstrap 4 Admin Template. It provides you with a collection of ready to use code snippets and utilities, custom pages, loads of charts, dashboard variations, a collection of applications and some useful widgets. Preview of this awesome admin template available here: 
+**Dashio-Admin** is a responsive react Admin Template. It provides you with a collection of ready to use code snippets and utilities, custom pages, loads of charts, dashboard variations, a collection of applications and some useful widgets. Preview of this awesome admin template available here: 
 
 # Preview
 
