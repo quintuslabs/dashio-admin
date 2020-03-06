@@ -71,7 +71,7 @@ Toast.propTypes = {
 Toast.defaultProps = {
   title: "",
   message: "We are facing technical issue !!",
-  status: "success"
+  status: "disabled"
 };
 
 export default Toast;
