@@ -8,6 +8,7 @@ import React, { Component } from "react";
 import { Alert } from "../../components/Alert";
 import { Badge } from "../../components/Badge";
 import Breadcrumb from "../../components/BreadCrumb/Breadcrumb";
+import { Toast } from "../../components/Toast";
 
 class AlertContainer extends Component {
   constructor(props) {
@@ -147,6 +148,7 @@ class AlertContainer extends Component {
             </div>
           </div>
         </div>
+        <Toast />
       </div>
     );
   }
