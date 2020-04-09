@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/dashio-admin/precache-manifest.acc9ead4b1ae608e368986199a9a1aad.js"
+  "/dashio-admin/precache-manifest.abed492965c0ec85d14662df685d6df6.js"
 );
 
 self.addEventListener('message', (event) => {
