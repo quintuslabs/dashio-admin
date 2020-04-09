@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/dashio-admin/static/css/main.043c98be.chunk.css",
-    "main.js": "/dashio-admin/static/js/main.f9a585f3.chunk.js",
-    "main.js.map": "/dashio-admin/static/js/main.f9a585f3.chunk.js.map",
+    "main.js": "/dashio-admin/static/js/main.c8ea451c.chunk.js",
+    "main.js.map": "/dashio-admin/static/js/main.c8ea451c.chunk.js.map",
     "runtime-main.js": "/dashio-admin/static/js/runtime-main.4dae10ea.js",
     "runtime-main.js.map": "/dashio-admin/static/js/runtime-main.4dae10ea.js.map",
     "static/css/2.17e5ed98.chunk.css": "/dashio-admin/static/css/2.17e5ed98.chunk.css",
     "static/js/2.cb64138d.chunk.js": "/dashio-admin/static/js/2.cb64138d.chunk.js",
     "static/js/2.cb64138d.chunk.js.map": "/dashio-admin/static/js/2.cb64138d.chunk.js.map",
     "index.html": "/dashio-admin/index.html",
-    "precache-manifest.abed492965c0ec85d14662df685d6df6.js": "/dashio-admin/precache-manifest.abed492965c0ec85d14662df685d6df6.js",
+    "precache-manifest.f011e6c97a9de57db402357300235eaa.js": "/dashio-admin/precache-manifest.f011e6c97a9de57db402357300235eaa.js",
     "service-worker.js": "/dashio-admin/service-worker.js",
     "static/css/2.17e5ed98.chunk.css.map": "/dashio-admin/static/css/2.17e5ed98.chunk.css.map",
     "static/css/main.043c98be.chunk.css.map": "/dashio-admin/static/css/main.043c98be.chunk.css.map",
@@ -21,6 +21,6 @@
     "static/css/2.17e5ed98.chunk.css",
     "static/js/2.cb64138d.chunk.js",
     "static/css/main.043c98be.chunk.css",
-    "static/js/main.f9a585f3.chunk.js"
+    "static/js/main.c8ea451c.chunk.js"
   ]
 }

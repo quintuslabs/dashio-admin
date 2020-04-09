@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "edca08033565941f311770846224e13f",
+    "revision": "96821756d6b1e06c5ec1e0419fcc44b8",
     "url": "/dashio-admin/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/dashio-admin/static/css/2.17e5ed98.chunk.css"
   },
   {
-    "revision": "372e40efe1044750754d",
+    "revision": "756a4bf1f4f69324502c",
     "url": "/dashio-admin/static/css/main.043c98be.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/dashio-admin/static/js/2.cb64138d.chunk.js.LICENSE"
   },
   {
-    "revision": "372e40efe1044750754d",
-    "url": "/dashio-admin/static/js/main.f9a585f3.chunk.js"
+    "revision": "756a4bf1f4f69324502c",
+    "url": "/dashio-admin/static/js/main.c8ea451c.chunk.js"
   },
   {
     "revision": "9f85d296c6a2a894ab9b",
