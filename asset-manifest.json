@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/dashio-admin/static/css/main.043c98be.chunk.css",
-    "main.js": "/dashio-admin/static/js/main.c8ea451c.chunk.js",
-    "main.js.map": "/dashio-admin/static/js/main.c8ea451c.chunk.js.map",
-    "runtime-main.js": "/dashio-admin/static/js/runtime-main.4dae10ea.js",
-    "runtime-main.js.map": "/dashio-admin/static/js/runtime-main.4dae10ea.js.map",
-    "static/css/2.17e5ed98.chunk.css": "/dashio-admin/static/css/2.17e5ed98.chunk.css",
-    "static/js/2.cb64138d.chunk.js": "/dashio-admin/static/js/2.cb64138d.chunk.js",
-    "static/js/2.cb64138d.chunk.js.map": "/dashio-admin/static/js/2.cb64138d.chunk.js.map",
+    "main.css": "/dashio-admin/static/css/main.382f4ffb.chunk.css",
+    "main.js": "/dashio-admin/static/js/main.ac51d743.chunk.js",
+    "main.js.map": "/dashio-admin/static/js/main.ac51d743.chunk.js.map",
+    "runtime-main.js": "/dashio-admin/static/js/runtime-main.08953286.js",
+    "runtime-main.js.map": "/dashio-admin/static/js/runtime-main.08953286.js.map",
+    "static/css/2.de424728.chunk.css": "/dashio-admin/static/css/2.de424728.chunk.css",
+    "static/js/2.a4daafe3.chunk.js": "/dashio-admin/static/js/2.a4daafe3.chunk.js",
+    "static/js/2.a4daafe3.chunk.js.map": "/dashio-admin/static/js/2.a4daafe3.chunk.js.map",
     "index.html": "/dashio-admin/index.html",
-    "precache-manifest.f011e6c97a9de57db402357300235eaa.js": "/dashio-admin/precache-manifest.f011e6c97a9de57db402357300235eaa.js",
+    "precache-manifest.614aac783a2b602561768093e521d96b.js": "/dashio-admin/precache-manifest.614aac783a2b602561768093e521d96b.js",
     "service-worker.js": "/dashio-admin/service-worker.js",
-    "static/css/2.17e5ed98.chunk.css.map": "/dashio-admin/static/css/2.17e5ed98.chunk.css.map",
-    "static/css/main.043c98be.chunk.css.map": "/dashio-admin/static/css/main.043c98be.chunk.css.map",
-    "static/js/2.cb64138d.chunk.js.LICENSE": "/dashio-admin/static/js/2.cb64138d.chunk.js.LICENSE",
+    "static/css/2.de424728.chunk.css.map": "/dashio-admin/static/css/2.de424728.chunk.css.map",
+    "static/css/main.382f4ffb.chunk.css.map": "/dashio-admin/static/css/main.382f4ffb.chunk.css.map",
+    "static/js/2.a4daafe3.chunk.js.LICENSE.txt": "/dashio-admin/static/js/2.a4daafe3.chunk.js.LICENSE.txt",
     "static/media/0.jpg": "/dashio-admin/static/media/0.73476783.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.4dae10ea.js",
-    "static/css/2.17e5ed98.chunk.css",
-    "static/js/2.cb64138d.chunk.js",
-    "static/css/main.043c98be.chunk.css",
-    "static/js/main.c8ea451c.chunk.js"
+    "static/js/runtime-main.08953286.js",
+    "static/css/2.de424728.chunk.css",
+    "static/js/2.a4daafe3.chunk.js",
+    "static/css/main.382f4ffb.chunk.css",
+    "static/js/main.ac51d743.chunk.js"
   ]
 }
