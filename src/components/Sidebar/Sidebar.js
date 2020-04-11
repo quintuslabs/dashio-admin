@@ -21,8 +21,10 @@ function Sidebar(props) {
     >
       <nav id="sidebar" className={props.toggleClass}>
         <ul className="list-unstyled components">
-          <li className={active === "/dashboard" ? "active" : null}>
-            <a href="/">
+          <li
+            className={active === "/dashio-admin/dashboard" ? "active" : null}
+          >
+            <a href="/dashio-admin/dashboard">
               <div className="menu-icon">
                 <i className="fa fa-home nav_icon" aria-hidden="true"></i>
               </div>
@@ -51,25 +53,37 @@ function Sidebar(props) {
               }
             >
               <li
-                className={active === "/components/buttons" ? "active" : null}
+                className={
+                  active === "/dashio-admin/components/buttons"
+                    ? "active"
+                    : null
+                }
               >
-                <a href="/components/buttons">
+                <a href="/dashio-admin/components/buttons">
                   <div className="menu-icon">
                     <i className="fa fa-puzzle-piece"></i>
                   </div>
                   <span className="menu-title">Buttons</span>
                 </a>
               </li>
-              <li className={active === "/components/badge" ? "active" : null}>
-                <a href="/components/badge">
+              <li
+                className={
+                  active === "/dashio-admin/components/badge" ? "active" : null
+                }
+              >
+                <a href="/dashio-admin/components/badge">
                   <div className="menu-icon">
                     <i className="fa fa-id-badge"></i>
                   </div>
                   <span className="menu-title">Badges</span>
                 </a>
               </li>
-              <li className={active === "/components/card" ? "active" : null}>
-                <a href="/components/card">
+              <li
+                className={
+                  active === "/dashio-admin/components/card" ? "active" : null
+                }
+              >
+                <a href="/dashio-admin/components/card">
                   <div className="menu-icon">
                     <i className="fa fa-id-card-o"></i>
                   </div>
@@ -77,8 +91,12 @@ function Sidebar(props) {
                 </a>
               </li>
 
-              <li className={active === "/components/alert" ? "active" : null}>
-                <a href="/components/alert">
+              <li
+                className={
+                  active === "/dashio-admin/components/alert" ? "active" : null
+                }
+              >
+                <a href="/dashio-admin/components/alert">
                   <div className="menu-icon">
                     <i className="fa fa-exclamation-triangle"></i>
                   </div>
@@ -87,10 +105,12 @@ function Sidebar(props) {
               </li>
               <li
                 className={
-                  active === "/components/progressbar" ? "active" : null
+                  active === "/dashio-admin/components/progressbar"
+                    ? "active"
+                    : null
                 }
               >
-                <a href="/components/progressbar">
+                <a href="/dashio-admin/components/progressbar">
                   <div className="menu-icon">
                     <i className="fa fa-tasks"></i>
                   </div>
@@ -98,8 +118,12 @@ function Sidebar(props) {
                 </a>
               </li>
 
-              <li className={active === "/components/loader" ? "active" : null}>
-                <a href="/components/loader">
+              <li
+                className={
+                  active === "/dashio-admin/components/loader" ? "active" : null
+                }
+              >
+                <a href="/dashio-admin/components/loader">
                   <div className="menu-icon">
                     <i className="fa fa-spinner"></i>
                   </div>
@@ -109,8 +133,10 @@ function Sidebar(props) {
             </ul>
           </li>
 
-          <li className={active === "/ui-elements" ? "active" : null}>
-            <a href="/ui-elements">
+          <li
+            className={active === "/dashio-admin/ui-elements" ? "active" : null}
+          >
+            <a href="/dashio-admin/ui-elements">
               <div className="menu-icon">
                 <i className="fa fa-book nav_icon" aria-hidden="true"></i>
               </div>
@@ -127,8 +153,8 @@ function Sidebar(props) {
             </a>
           </li> */}
 
-          <li className={active === "/forms" ? "active" : null}>
-            <a href="/forms">
+          <li className={active === "/dashio-admin/forms" ? "active" : null}>
+            <a href="/dashio-admin/forms">
               <div className="menu-icon">
                 <i
                   className="fa fa-check-square-o nav_icon"
@@ -139,8 +165,8 @@ function Sidebar(props) {
             </a>
           </li>
 
-          <li className={active === "/tables" ? "active" : null}>
-            <a href="/tables">
+          <li className={active === "/dashio-admin/tables" ? "active" : null}>
+            <a href="/dashio-admin/tables">
               <div className="menu-icon">
                 <i className="fa fa-table nav_icon" aria-hidden="true"></i>
               </div>
@@ -148,8 +174,8 @@ function Sidebar(props) {
             </a>
           </li>
 
-          <li className={active === "/pages" ? "active" : null}>
-            <a href="/pages">
+          <li className={active === "/dashio-admin/pages" ? "active" : null}>
+            <a href="/dashio-admin/pages">
               <div className="menu-icon">
                 <i
                   className="fa fa-file-text-o nav_icon"
@@ -160,8 +186,8 @@ function Sidebar(props) {
             </a>
           </li>
 
-          <li className={active === "/charts" ? "active" : null}>
-            <a href="/charts">
+          <li className={active === "/dashio-admin/charts" ? "active" : null}>
+            <a href="/dashio-admin/charts">
               <div className="menu-icon">
                 <i className="fa fa-bar-chart nav_icon" aria-hidden="true"></i>
               </div>

@@ -6,6 +6,7 @@
 
 import React, { Component } from "react";
 import "./StyleSheets/Navbar.css";
+import { Link } from "react-router-dom";
 
 class Navbar extends Component {
   constructor(props) {
@@ -18,7 +19,10 @@ class Navbar extends Component {
       <div className="header-section" id="sticky">
         <nav className="navbar navbar-expand-lg navbar-light">
           <div className="container-fluid">
-            <div className="nav-title">Dashio-Admin</div>
+            <Link to="/dashio-admin/dashboard">
+              {" "}
+              <div className="nav-title">Dashio-Admin</div>
+            </Link>
             <div onClick={() => this.props.onToggleClick()}>
               <i className="fa fa-bars" aria-hidden="true"></i>
             </div>

@@ -20,81 +20,81 @@ import Charts from "./views/Charts/Charts";
 
 var routes = [
   {
-    path: "/",
+    path: "/dashio-admin",
     exact: true,
     layout: BaseLayout,
-    component: () => <Redirect to="/dashboard" />
+    component: () => <Redirect to="/dashio-admin/dashboard" />,
   },
   {
-    path: "/dashboard",
+    path: "/dashio-admin/dashboard",
     layout: BaseLayout,
-    component: Dashboard
-  },
-
-  {
-    path: "/components/buttons",
-    layout: BaseLayout,
-    component: Buttons
+    component: Dashboard,
   },
 
   {
-    path: "/components/badge",
+    path: "/dashio-admin/components/buttons",
     layout: BaseLayout,
-    component: Badge
+    component: Buttons,
   },
 
   {
-    path: "/components/card",
+    path: "/dashio-admin/components/badge",
     layout: BaseLayout,
-    component: Card
-  },
-  {
-    path: "/components/alert",
-    layout: BaseLayout,
-    component: Alert
-  },
-  {
-    path: "/components/progressbar",
-    layout: BaseLayout,
-    component: ProgressBar
-  },
-  {
-    path: "/components/loader",
-    layout: BaseLayout,
-    component: Loader
+    component: Badge,
   },
 
   {
-    path: "/ui-elements",
+    path: "/dashio-admin/components/card",
     layout: BaseLayout,
-    component: UIElements
+    component: Card,
   },
   {
-    path: "/widgets",
+    path: "/dashio-admin/components/alert",
     layout: BaseLayout,
-    component: Widgets
+    component: Alert,
   },
   {
-    path: "/forms",
+    path: "/dashio-admin/components/progressbar",
     layout: BaseLayout,
-    component: Forms
+    component: ProgressBar,
   },
   {
-    path: "/tables",
+    path: "/dashio-admin/components/loader",
     layout: BaseLayout,
-    component: Tables
-  },
-  {
-    path: "/pages",
-    layout: BaseLayout,
-    component: Pages
+    component: Loader,
   },
 
   {
-    path: "/charts",
+    path: "/dashio-admin/ui-elements",
     layout: BaseLayout,
-    component: Charts
-  }
+    component: UIElements,
+  },
+  {
+    path: "/dashio-admin/widgets",
+    layout: BaseLayout,
+    component: Widgets,
+  },
+  {
+    path: "/dashio-admin/forms",
+    layout: BaseLayout,
+    component: Forms,
+  },
+  {
+    path: "/dashio-admin/tables",
+    layout: BaseLayout,
+    component: Tables,
+  },
+  {
+    path: "/dashio-admin/pages",
+    layout: BaseLayout,
+    component: Pages,
+  },
+
+  {
+    path: "/dashio-admin/charts",
+    layout: BaseLayout,
+    component: Charts,
+  },
 ];
 
 export default routes;

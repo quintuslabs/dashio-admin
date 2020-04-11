@@ -6,7 +6,8 @@
 
 import React, { Component } from "react";
 import { createBrowserHistory } from "history";
-import { Router, Route } from "react-router-dom";
+import { Router, Route, Switch } from "react-router-dom";
+import Pages from "./views/Pages/Pages";
 
 import routes from "./routes";
 class App extends Component {
@@ -22,14 +23,14 @@ class App extends Component {
           basename={process.env.REACT_APP_BASENAME || ""}
           history={browserHistory}
         >
-          <div>
+          <Switch>
             {routes.map((route, index) => {
               return (
                 <Route
                   key={index}
                   path={route.path}
                   exact={route.exact}
-                  component={props => {
+                  component={(props) => {
                     return (
                       <route.layout {...props}>
                         <route.component {...props} />
@@ -39,7 +40,8 @@ class App extends Component {
                 />
               );
             })}
-          </div>
+            <Route Redirect to="/PageNotFound" exact component={Pages} />
+          </Switch>
         </Router>
       </div>
     );
